@@ -19,8 +19,8 @@ div {
 span {
   display: block;
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height:30%;
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
   -webkit-animation: run 2s ease-in-out;
