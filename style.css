@@ -1,8 +1,8 @@
-body {
+section {
   margin: 0;
   background: #FFFFFF;
 }
-div {
+section {
   width: 120px;
   height: 120px;
   transform: translate(-90%, -90%);
