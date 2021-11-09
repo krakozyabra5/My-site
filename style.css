@@ -18,7 +18,7 @@ div {
 }
 span {
   display: block;
-  position: absolute;
+  //position: absolute;
   width: 50%;
   height:50%;
   border-radius: 50%;
