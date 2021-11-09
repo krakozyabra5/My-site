@@ -15,6 +15,7 @@ span {
   position: absolute;
   width: 40%;
   height: 40%;
+  border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
   -webkit-animation: run 2s infinite ease-in-out;
   animation: run 2s infinite ease-in-out;
