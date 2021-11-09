@@ -6,7 +6,7 @@ div {
   width: 120px;
   height: 120px;
   transform: translate(-90%, -90%);
-  position: absolute; 
+  position: auto; 
   top: 50%; 
   left: 50%;
 }
