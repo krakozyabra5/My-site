@@ -6,7 +6,8 @@ div {
   width: 100px;
   height: 100px;
   position: absolute;
-  style="display: block; margin: 0 auto;"
+  display: block; 
+  margin: 0 auto;
 
 
 }
