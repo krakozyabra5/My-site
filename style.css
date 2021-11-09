@@ -5,13 +5,13 @@ body {
 div {
   width: 40%;
   height: 40%;
-  position: absolute;
+  //position: absolute;
 
   //left: 50%;
 
   //top: 50%;
 
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
 
   
 
