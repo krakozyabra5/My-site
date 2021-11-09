@@ -58,6 +58,7 @@ span {
     border-radius: 0%;
   }
 }
+
 @keyframes run {
   0% {
     transform: translate(0%);
