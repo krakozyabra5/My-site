@@ -26,3 +26,16 @@ span {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
+.two {
+  background: #F0653E;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.three {
+  background: #B9C0C0;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.four {
+  background: #8F7473;
+}
