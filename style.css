@@ -3,8 +3,8 @@ body {
   background: #FFFFFF;
 }
 div {
-  width: 120px;
-  height: 120px;
+  width: 40%;
+  height: 40%px;
   position: fixed;
 
   left: 50%;
