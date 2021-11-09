@@ -5,7 +5,7 @@ body {
 div {
   width: 100px;
   height: 100px;
-  transform: translate(-50%, -50%);
+  transform: translate(-5%, -5%);
   position: absolute; 
   top: 50%; 
   left: 50%;
