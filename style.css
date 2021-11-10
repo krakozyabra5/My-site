@@ -4,8 +4,8 @@ body {
 }
 
 div {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 50%;
   transform: translate(-50%, -50%);
   position: absolute; 
   top: 50%; 
