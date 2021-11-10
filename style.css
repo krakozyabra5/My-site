@@ -19,7 +19,7 @@ span {
   height: 40%;
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
-  -webkit-animation: run 2s infinite ease-in-out;
+  -webkit-animation: run 2s ease-in-out;
   animation: run 2s ease-in-out;
 }
 
@@ -31,12 +31,10 @@ span {
   animation-fill-mode: forwards;
 }
 
-div:hover .one {
-    animation-name: grow;
-    animation-duration: 3s;
+.one:hover .one {
+    animation-name: Transform;
     animation-fill-mode: forwards;
-    -webkit-animation-name: grow;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-name: Transform;
     -webkit-animation-fill-mode: forwards;
 
 @-webkit-keyframes run {
