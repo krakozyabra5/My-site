@@ -32,7 +32,7 @@ span {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 //animation-duration: 15s;
-  animation-fill-mode:forwards
+  animation-fill-mode: forwards;
 }
 }
 
