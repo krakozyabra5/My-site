@@ -31,6 +31,8 @@ span {
   background: #F3B222;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  animation-duration: 1s;
+}
 }
 
 @-webkit-keyframes run {
