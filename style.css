@@ -3,11 +3,6 @@ body {
   background: #FFFFFF;
 }
 
-body {
-  margin: 0;
-  background: #F4EDE5;
-}
-
 div {
   width: 100px;
   height: 100px;
@@ -33,7 +28,7 @@ span {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes run {
