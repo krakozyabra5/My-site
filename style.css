@@ -28,11 +28,8 @@ span {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
-}
-
-.demo:hover .one {
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
 }
 
 @-webkit-keyframes run {
