@@ -3,15 +3,15 @@ body {
   background: #FFFFFF;
 }
 div {
-  width: 120px;
-  height: 120px;
-  //position: absolute;
+  width: 50%;
+  height: 50%;
+  position: absolute;
 
-  //left: 50%;
+  left: 50%;
 
-  //top: 50%;
+  top: 50%;
 
-  //transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   
 
