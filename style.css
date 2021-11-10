@@ -34,14 +34,14 @@ span {
 }
 
 @-webkit-keyframes run {
-  100% {
+  25% {
     transform: translate(0%, 150%) scale(1); 
     border-radius: 0%;
   }
 }
 
 @keyframes run {
-  100% {
+  25% {
     transform: translate(0%, 150%) scale(1); 
     border-radius: 0%;
   }
