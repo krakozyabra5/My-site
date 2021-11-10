@@ -41,19 +41,7 @@ span {
 }
 
 @keyframes run {
-  0% {
-    transform: translate(0%);
-    border-radius: 50%;
-  }
-  25% {
-    transform: translate(150%) scale(1); 
-    border-radius: 0%;
-  }
-  50% {
-    transform: translate(150%, 150%);
-    border-radius: 50%; 
-  }
-  75% {
+  100% {
     transform: translate(0%, 150%) scale(1); 
     border-radius: 0%;
   }
