@@ -28,8 +28,7 @@ span {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
+  animation-play-state: paused;
 }
 
 @-webkit-keyframes run {
