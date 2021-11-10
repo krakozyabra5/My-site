@@ -2,20 +2,16 @@ body {
   margin: 0;
   background: #FFFFFF;
 }
+
 div {
   width: 35%;
   height: 35%;
   position: absolute;
-
   left: 50%;
-
   top: 50%;
-
   transform: translate(-50%, -50%);
-
-  
-
 }
+
 span {
   display: block;
   position: absolute;
@@ -32,9 +28,11 @@ span {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
+}
+
+.demo:hover .one {
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-}
 }
 
 @-webkit-keyframes run {
