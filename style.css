@@ -99,11 +99,14 @@ div {
 
   .menu_bar li {
     float: none;
-    background-color: #D3D3D3;
   }
 
   .menuBurger {
     display: inline-block;
   }
+
+  .menu {
+    padding-top: 10px
+  }
 }
-}
+
