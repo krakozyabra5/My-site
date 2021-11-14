@@ -56,7 +56,7 @@ span {
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
   -webkit-animation: run 2s ease-in-out;
-  animation: run 2s ease-in-out animation-fill-mode forwards;
+  animation: run 2s ease-in-out forwards;
 }
 
 .one {
