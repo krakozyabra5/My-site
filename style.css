@@ -14,7 +14,7 @@ margin: 0;
 padding-left: 10px;
 display: flex;
 padding-top: 10px;
-position: relative;
+position: static;
 }
 
 .menuBurger {
