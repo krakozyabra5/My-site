@@ -53,11 +53,8 @@ span {
 }
 
 @media (max-width: 359px) {
-	.site-title {
-    font-size: 1.5em;
-  }
-  span {
-   width: 20%;
-  height: 40%;
+ span {
+  width: 11%;
+  height: 5%;
   }
 }
