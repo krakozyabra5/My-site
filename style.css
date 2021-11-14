@@ -16,6 +16,11 @@ display: flex;
 padding-top: 10px;
 }
 
+.menu a:hover { 
+  color: #228B22;
+  box-shadow: 0 0 7px 1px #228B22;
+}
+
 .menu {
 padding-right: 18px;
 }
