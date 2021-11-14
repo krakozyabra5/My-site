@@ -16,6 +16,10 @@ display: flex;
 padding-top: 10px;
 }
 
+.MenuBurger {
+  display: none;
+}
+
 .menu a:hover { 
   color: #32CD32;
   box-shadow: 0 0 7px 1px #32CD32;
