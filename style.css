@@ -56,7 +56,7 @@ span {
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
   -webkit-animation: run 2s ease-in-out;
-  animation: run 2s ease-in-out; 
+  animation: cube 2s ease-in-out 0s 1 normal forwards; 
   animation-fill-mode: forwards;
 }
 
@@ -68,14 +68,14 @@ span {
   animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes run {
+@-webkit-keyframes cube {
   25% {
     transform: translate(150%, 0%) scale(1); 
     border-radius: 0%;
   }
 }
 
-@keyframes run {
+@keyframes cube {
   25% {
     transform: translate(150%, 0%) scale(1); 
     border-radius: 0%;
