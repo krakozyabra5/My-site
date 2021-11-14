@@ -15,12 +15,13 @@ display: flex;
 }
 
 .menu {
-padding-right: 15px;
+padding-right: 18px;
 }
 
-.no_decoration {
+.menu_decoration {
   text-decoration: none;
   color: #00CED1;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.4);
 }
 
 .animation {
