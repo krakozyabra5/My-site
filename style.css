@@ -20,7 +20,7 @@ padding-top: 10px;
 padding-left: 0;
 list-style: none;
 display: block;
-margin: 5px;
+padding-top: 10px;
 background-color: #D3D3D3;
 height: 120px;
 border-radius: 20px;
@@ -36,7 +36,11 @@ border-radius: 20px;
 }
 
 .menu {
-padding-right: 18px;
+  padding-right: 18px;
+}
+
+.menu_mobile {
+  margin: 10px;
 }
 
 .menu_decoration {
