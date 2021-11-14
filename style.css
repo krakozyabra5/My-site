@@ -8,6 +8,12 @@ height: 40px;
 border-radius: 15px;
 }
 
+.nav_mobile {
+  -webkit-animation: menu 1s ease;
+  animation: menu 1s ease; 
+  animation-fill-mode: forwards;
+}
+
 .menu_bar {
 list-style: none;
 margin: 0;
@@ -78,7 +84,7 @@ div {
   height: 40px;
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
-  -webkit-animation: run 2s ease-in-out;
+  -webkit-animation: cube 2s ease-in-out;
   animation: cube 2s ease-in-out; 
   animation-fill-mode: forwards;
 }
@@ -88,6 +94,20 @@ div {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
+}
+
+@-webkit-keyframes menu {
+  25% {
+    transform: translate(0%, 500%) scale(1); 
+    border-radius: 0%;
+  }
+}
+
+@keyframes menu {
+  25% {
+    transform: translate(0%, 500%) scale(1); 
+    border-radius: 0%;
+  }
 }
 
 @-webkit-keyframes cube {
