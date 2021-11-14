@@ -2,7 +2,7 @@ body {
   background: #FFFFFF;
 }
 
-.nav {
+nav {
 background-color: #D3D3D3;
 height: 40px;
 border-radius: 15px;
@@ -61,7 +61,7 @@ div {
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
   -webkit-animation: run 2s ease-in-out;
-  animation: cube 2s ease-in-out 0s 1 normal forwards; 
+  animation: cube 2s ease-in-out; 
   animation-fill-mode: forwards;
 }
 
@@ -70,7 +70,6 @@ div {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes cube {
