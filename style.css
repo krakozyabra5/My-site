@@ -1,5 +1,6 @@
 body {
   background: #FFFFFF;
+  border-radius: 10px;
 }
 
 .nav {
@@ -23,7 +24,7 @@ padding-right: 18px;
   color: #00CED1;
   text-shadow: 1px 1px 2px rgba(0,0,0,.4);
   border: 2px solid #FFFFFF;
-  border-radius: 20%;
+  border-radius: 10px;
 }
 
 .animation {
