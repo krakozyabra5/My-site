@@ -1,11 +1,11 @@
 body {
   background: #FFFFFF;
-  border-radius: 10px;
 }
 
 .nav {
 background-color: #ecebe4;
-height: 20px;
+height: 40px;
+border-radius: 10px;
 }
 
 .menu_bar {
