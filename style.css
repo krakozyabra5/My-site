@@ -21,7 +21,9 @@ padding-left: 0;
 list-style: none;
 display: block;
 margin: 5px;
-background: grey;
+background-color: #D3D3D3;
+height: 120px;
+border-radius: 20px;
 }
 
 .menuBurger {
