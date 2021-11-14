@@ -13,8 +13,9 @@ padding-left: 0;
 display: flex;
 }
 
-.menu
+.menu {
 padding-right: 15px;
+}
 
 .animation {
 padding: 20px;
