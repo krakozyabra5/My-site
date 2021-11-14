@@ -2,6 +2,7 @@ body {
   background: #FFFFFF;
 }
 
+/*
 div {
   margin: 0 auto;
   width: 100px;
@@ -11,6 +12,7 @@ div {
   top: 50%; 
   left: 50%;
 }
+*/
 
 span {
   display: block;
