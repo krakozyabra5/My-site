@@ -2,7 +2,11 @@ body {
   background: #FFFFFF;
 }
 
-div {
+.nav {
+
+}
+
+.animation {
 padding: 20px;
 padding-bottom: 70px;
 }
