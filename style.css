@@ -6,13 +6,15 @@ body {
 background-color: #ecebe4;
 }
 
-.menu {
+.menu_bar {
 list-style: none;
 margin: 0;
 padding-left: 0;
-padding-right: 15px;
 display: flex;
 }
+
+.menu
+padding-right: 15px;
 
 .animation {
 padding: 20px;
