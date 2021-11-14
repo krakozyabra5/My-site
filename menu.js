@@ -1,4 +1,6 @@
-$(function(){
+let menuBurger = document.querySelector('menuBurger');
+
+menuBurger.onclick function() {
   $('.menuBurger').on('click', function(){
     $('.menu_bar').slideToggle(200, function(){
       if($(this).css('display') === 'none'){
