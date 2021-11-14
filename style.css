@@ -91,5 +91,17 @@ div {
 }
 
 @media (max-width: 542px) {
-  
+  .menu_bar {
+    display: none;
+    position: absolute;
+  }
+
+  .menu_bar li {
+    float: none;
+  }
+
+  .menuBurger {
+    display: inline-block;
+  }
+}
 }
