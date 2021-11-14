@@ -2,6 +2,10 @@ body {
   background: #FFFFFF;
 }
 
+div {
+padding: 30px
+}
+
 /*
 div {
   margin: 0 auto;
