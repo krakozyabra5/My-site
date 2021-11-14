@@ -26,7 +26,8 @@ padding-right: 18px;
   border: 2px solid #FFFFFF;
   border-radius: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 5.5px 1.5px #00CED1;
+  box-shadow: 0 0 7px 1px #00CED1;
+  word-spacing:25px;
 }
 
 .animation {
