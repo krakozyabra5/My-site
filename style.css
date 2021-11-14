@@ -4,7 +4,6 @@ body {
 
 .nav {
 background-color: #ecebe4;
-border-radius: 5%;
 }
 
 .menu_bar {
@@ -22,6 +21,8 @@ padding-right: 18px;
   text-decoration: none;
   color: #00CED1;
   text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+  border: 2px solid #ffff00;
+  border-radius: 20%;
 }
 
 .animation {
