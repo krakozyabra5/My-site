@@ -53,7 +53,7 @@ div {
 }
 */
 
-span {
+.span {
   display: block;
   position: fixed;
   width: 40px;
