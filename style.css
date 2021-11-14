@@ -8,28 +8,12 @@ height: 40px;
 border-radius: 15px;
 }
 
-.nav_mobile {
-  -webkit-animation: menu 1s ease;
-  animation: menu 1s ease; 
-  animation-fill-mode: forwards;
-}
-
 .menu_bar {
 list-style: none;
 margin: 0;
 padding-left: 10px;
 display: flex;
 padding-top: 10px;
-}
-
-.menu_bar_mobile {
-padding-left: 0;
-list-style: none;
-display: block;
-padding-top: 10px;
-background-color: #D3D3D3;
-height: 120px;
-border-radius: 0px;
 }
 
 .menuBurger {
@@ -43,10 +27,6 @@ border-radius: 0px;
 
 .menu {
   padding-right: 18px;
-}
-
-.menu_mobile {
-  padding-top: 20px;
 }
 
 .menu_decoration {
@@ -94,20 +74,6 @@ div {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-duration: 2s;
-}
-
-@-webkit-keyframes menu {
-  25% {
-    transform: scale(1, 4); 
-    border-radius: 0%;
-  }
-}
-
-@keyframes menu {
-  25% {
-    transform: scale(1, 4);
-    border-radius: 0%;
-  }
 }
 
 @-webkit-keyframes cube {
