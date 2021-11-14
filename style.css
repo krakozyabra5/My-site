@@ -97,15 +97,15 @@ div {
 }
 
 @-webkit-keyframes menu {
-  100% {
-    transform: scale(4, 1); 
+  25% {
+    transform: scale(1, 4); 
     border-radius: 0%;
   }
 }
 
 @keyframes menu {
-  100% {
-    transform: scale(4, 1);
+  25% {
+    transform: scale(1, 4);
     border-radius: 0%;
   }
 }
