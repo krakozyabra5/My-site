@@ -81,10 +81,6 @@ span {
   }
 }
 
-#one {
- animation-fill-mode: forwards;
-}
-
 @media (max-width: 360px) {
   
 }
