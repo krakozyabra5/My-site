@@ -3,7 +3,11 @@ body {
 }
 
 .nav {
-background-color: #ecebe4
+background-color: #ecebe4;
+}
+
+.menu {
+display: flex;
 }
 
 .animation {
