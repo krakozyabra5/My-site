@@ -17,9 +17,11 @@ padding-top: 10px;
 }
 
 .menu_bar_mobile {
-padding-right: 0;
+padding-left: 0;
 list-style: none;
 display: block;
+margin: 5px;
+background: grey;
 }
 
 .menuBurger {
