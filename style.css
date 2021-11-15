@@ -96,6 +96,7 @@ padding-bottom: 70px;
   .menu_bar {
     display: none;
     position: absolute;
+    border: 1px solid #808080;
   }
 
   .menu_bar li {
