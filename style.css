@@ -114,6 +114,7 @@ padding-bottom: 70px;
     margin: 10px auto;
     border: 1px solid #808080;
     border-width: 3px;
+    padding-left: 0px;
   }
 
   .menuBurger {
