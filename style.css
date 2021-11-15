@@ -125,9 +125,9 @@ padding-bottom: 70px;
     box-shadow: none;
   }
     
-  .menu a:hover { 
+  .menu menu_bar a:hover { 
     color: #32CD32;
-    border: 0.5px solid #32CD32;  
+    border: 0.5px solid #32CD32;
   }
 }
 
