@@ -101,14 +101,15 @@ padding-bottom: 70px;
     display: none;
     position: absolute;
     padding-left: 0px;
+    border: 0.5px solid #D3D3D3;
   }
     
   .menu {
     display: block;
     background: #FFFFFF;
-    border: 0.5px solid #808080;
+    border: 0.5px solid #00CED1;
     border-width: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
