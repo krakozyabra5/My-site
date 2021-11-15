@@ -100,7 +100,10 @@ padding-bottom: 70px;
 
   .menu_bar li {
     float: none;
-    margin: 10px auto;
+  }
+  
+  .menu_bar {
+      margin: 10px auto;
     border: 1px solid #808080;
     border-width: 3px;
   }
