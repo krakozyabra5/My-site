@@ -99,17 +99,15 @@ padding-bottom: 70px;
   }
 
   .menu_bar li {
-    /*float: none;*/
-    margin: 10px auto;
-    position: relative;
-display: block;
-padding: .4em .4em .4em 2em;
-margin: .5em 0;
-background: #DAD2CA;
-color: #444;
-text-decoration: none;
-border-radius: .3em;
-transition: .3s ease-out;
+/*position: relative;*/
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
   }
   
   .menu_bar {
@@ -121,5 +119,9 @@ transition: .3s ease-out;
   .menuBurger {
     display: inline-block;
   }
+  
+  .menu {
+  padding-right: 18px;
+}
 }
 
