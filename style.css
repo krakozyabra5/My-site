@@ -99,7 +99,7 @@ padding-bottom: 70px;
   }
 
   .menu_bar li {
-    float: none;
+    /*float: none;*/
     margin: 10px auto;
     position: relative;
 display: block;
