@@ -116,6 +116,8 @@ padding-bottom: 70px;
   
   .menu_decoration {
     border: none;
+    box-shadow: none;
+    box-shadow-left: 0 0 3px 1px #00CED1;
   }
 }
 
