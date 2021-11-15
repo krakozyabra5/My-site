@@ -99,10 +99,6 @@ padding-bottom: 70px;
   }
 
   .menu_bar li {
-  background: #DAD2CA;
-  }
-  
-  .menu_bar {
     margin: 10px auto;
     border: 1px solid #808080;
     border-width: 3px;
@@ -114,7 +110,8 @@ padding-bottom: 70px;
   }
   
   .menu {
-  padding-right: 5px;
+  padding-top: 5px;
+  background: #DAD2CA;
 }
 }
 
