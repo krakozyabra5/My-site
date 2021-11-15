@@ -107,10 +107,9 @@ padding-bottom: 70px;
   }
   
   .menu {
-    margin: 2px auto;
+    margin: 10px auto;
     border: 1px solid #808080;
-    border-width: 5px;
-    display: -webkit-inline-flex;
+    border-width: 3px;
   }
 }
 
