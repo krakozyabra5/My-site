@@ -57,7 +57,7 @@ padding-bottom: 70px;
 
 .cube {
   display: block;
-  position: fixed;
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -114,6 +114,7 @@ padding-bottom: 70px;
     border-width: 3px;
     margin-bottom: 20px;
   }
+  
   .menu_decoration {
     text-decoration: none;
   }
