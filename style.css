@@ -110,9 +110,9 @@ padding-bottom: 70px;
   }
   
   .menu {
-  padding-top: 5px;
+  display: block;
   background: #DAD2CA;
-  padding-down: 15px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.5);
 }
 }
 
