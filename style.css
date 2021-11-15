@@ -109,7 +109,7 @@ padding-bottom: 70px;
   }
     
   .menu {
-    display: block;
+    display: inline-block;
     background: #FFFFFF;
     border: 0.5px solid #FFFFFF;
     border-width: 3px;
