@@ -92,7 +92,7 @@ padding-bottom: 70px;
 
 //Протативный дизайн меню
 
-@media (max-width: 542px) {
+@media (max-width: 720px) {
   .menu_bar {
     display: none;
     position: absolute;
@@ -100,7 +100,6 @@ padding-bottom: 70px;
 
   .menu_bar li {
     float: none;
-    border: 1px solid #808080;
   }
 
   .menuBurger {
@@ -109,6 +108,7 @@ padding-bottom: 70px;
 
   .menu {
     padding-top: 14px;
+    border: 1px solid #808080;
   }
 }
 
