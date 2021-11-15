@@ -41,6 +41,10 @@ position: static;
   word-spacing: 3px;
 }
 
+.menu_rotate {
+margin: 2px
+}
+
 .animation {
 padding: 20px;
 padding-bottom: 70px;
