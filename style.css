@@ -117,7 +117,7 @@ padding-bottom: 70px;
   .menu_decoration {
     border: none;
     box-shadow: none;
-    border-left: 0 0 3px 1px #00CED1;
+    border-right: 0 0 7px 1px #00CED1;
   }
 }
 
