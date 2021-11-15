@@ -97,20 +97,13 @@ padding-bottom: 70px;
     display: none;
     position: absolute;
   }
-
-  .menu_bar li {
-    margin: 10px 5px;
-    border: 1px solid #808080;
+    
+  .menu {
+    display: block;
+    background: #DAD2CA;
+    margin: 0px 2px;
+    border: 0.5px solid #808080;
     border-width: 3px;
   }
-
-  .menuBurger {
-    display: inline-block;
-  }
-  
-  .menu {
-  display: block;
-  background: #DAD2CA;
-}
 }
 
