@@ -102,7 +102,7 @@ padding-bottom: 70px;
     margin: 10px auto;
     border: 1px solid #808080;
     border-width: 3px;
-    padding-left: 0px;
+    /*padding-left: 0px;*/
   }
 
   .menuBurger {
@@ -112,6 +112,7 @@ padding-bottom: 70px;
   .menu {
   padding-top: 5px;
   background: #DAD2CA;
+  padding-down: 15px;
 }
 }
 
