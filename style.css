@@ -116,8 +116,9 @@ padding-bottom: 70px;
   
   .menu_decoration {
     border: none;
+    border-right: 1px solid #00CED1;
+    border-radius: 15px;
     box-shadow: none;
-    border-right: 0 0 7px 1px #00CED1;
   }
 }
 
