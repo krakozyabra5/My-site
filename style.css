@@ -116,7 +116,7 @@ padding-bottom: 70px;
   }
   
   .menu_decoration {
-    text-decoration: none;
+    box-shadow: none;
   }
 }
 
