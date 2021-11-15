@@ -101,11 +101,12 @@ padding-bottom: 70px;
     display: none;
     position: absolute;
     padding-left: 0px;
+    margin-bottom: 5px;
   }
     
   .menu {
     display: block;
-    background: #DAD2CA;
+    background: #FFFFFF;
     border: 0.5px solid #808080;
     border-width: 3px;
   }
