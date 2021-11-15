@@ -105,11 +105,13 @@ padding-bottom: 70px;
   .menuBurger {
     display: inline-block;
   }
-
+  
   .menu {
     padding-top: 14px;
     border: 1px solid #808080;
-    border-width: 10px;
+    border-width: 5px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
   }
