@@ -99,7 +99,7 @@ padding-bottom: 70px;
   }
 
   .menu_bar li {
-    /*margin: 10px auto;*/
+    margin: 10px 5px;
     border: 1px solid #808080;
     border-width: 3px;
   }
