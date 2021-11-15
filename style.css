@@ -108,11 +108,5 @@ padding-bottom: 70px;
   .menuBurger {
     display: inline-block;
   }
-  
-  .menu {
-    margin: 10px auto;
-    border: 1px solid #808080;
-    border-width: 3px;
-  }
 }
 
