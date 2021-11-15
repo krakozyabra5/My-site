@@ -109,6 +109,9 @@ padding-bottom: 70px;
   .menu {
     padding-top: 14px;
     border: 1px solid #808080;
+    border-width: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
