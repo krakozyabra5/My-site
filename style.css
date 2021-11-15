@@ -93,6 +93,10 @@ padding-bottom: 70px;
 /*Протативный дизайн меню*/
 
 @media (max-width: 720px) {
+  .menuBurger {
+    display: inline-block;
+  }
+  
   .menu_bar {
     display: none;
     position: absolute;
