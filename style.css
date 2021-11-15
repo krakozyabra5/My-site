@@ -107,6 +107,7 @@ padding-bottom: 70px;
     margin-top: 15px;
     background: #D3D3D3;
     white-space: nowrap;
+    width: 40%;
   }
     
   .menu {
@@ -123,6 +124,11 @@ padding-bottom: 70px;
   .menu_decoration {
     border: none;
     box-shadow: none;
+  }
+    
+  .menu a:hover { 
+    color: #32CD32;
+    border-color: #32CD32;  
   }
 }
 
