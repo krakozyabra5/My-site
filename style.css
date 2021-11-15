@@ -103,11 +103,11 @@ padding-bottom: 70px;
   }
     
   .menu {
-    display: block;
+    /*display: block;
     background: #DAD2CA;
     margin: 0px 2px;
     border: 0.5px solid #808080;
-    border-width: 3px;
+    border-width: 3px;*/
   }
 }
 
