@@ -107,13 +107,10 @@ padding-bottom: 70px;
   }
   
   .menu {
-    padding-top: 14px;
+    margin: 2px auto;
     border: 1px solid #808080;
     border-width: 5px;
     display: -webkit-inline-flex;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
