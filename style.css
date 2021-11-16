@@ -2,6 +2,12 @@ body {
   background: #FFFFFF;
 }
 
+/*Корректное отображение названия сайта или раздела, где находится посетитель*/
+
+.correct_title {
+margin: 20px auto;
+}
+
 /*меню*/
 
 .nav {
@@ -10,7 +16,7 @@ height: 40px;
 border-radius: 15px;
 position: fixed;
 top: 0;
-width: 100%;
+/*width: 100%;*/
 }
 
 .menu_bar {
