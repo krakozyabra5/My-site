@@ -111,17 +111,17 @@ padding-bottom: 70px;
   }
     
   .menu {
-    display: inline-block;
+    /*display: inline-block;*/
     padding-right: 0px;
     background: #FFFFFF;
     border: 0.5px solid #FFFFFF;
-    /*border-width: 6px;
+    border-width: 6px;
     outline: 0.6px solid #808080;
     margin-bottom: 0px;
     margin-top: 0px;
     border-radius: 0px;
     margin-right: 0px;
-    margin-left: 0px;*/
+    margin-left: 0px;
   }
   
   .menu_decoration {
