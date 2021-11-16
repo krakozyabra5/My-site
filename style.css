@@ -8,7 +8,7 @@ body {
 background-color: #D3D3D3;
 height: 40px;
 border-radius: 15px;
-z-index: 100
+z-index: 100;
 }
 
 .menu_bar {
@@ -100,7 +100,7 @@ padding-bottom: 70px;
   
   .menu_bar {
     display: none;
-    position: absolute;
+    position: static;
     padding-left: 0px;
     border-bottom: 0.5px solid #808080;
     border-right: 0.5px solid #808080;
