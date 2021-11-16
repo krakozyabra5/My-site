@@ -5,8 +5,10 @@ body {
 /*Корректное отображение названия сайта или раздела, где находится посетитель*/
 
 .correct_title {
-padding-top: 40px;
+padding-top: 45px;
 text-align: center;
+font-family: Arial, sans-serif;
+font-weight: bold;
 }
 
 /*меню*/
@@ -17,7 +19,7 @@ height: 40px;
 border-radius: 15px;
 position: fixed;
 top: 0;
-width: 96%;
+width: 95%;
 }
 
 .menu_bar {
