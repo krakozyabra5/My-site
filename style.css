@@ -5,7 +5,8 @@ body {
 /*Корректное отображение названия сайта или раздела, где находится посетитель*/
 
 .correct_title {
-padding-top: 30px;
+padding-top: 40px;
+text-align: center;
 }
 
 /*меню*/
@@ -16,7 +17,7 @@ height: 40px;
 border-radius: 15px;
 position: fixed;
 top: 0;
-width: 90%;
+width: 96%;
 }
 
 .menu_bar {
