@@ -98,7 +98,7 @@ padding-bottom: 70px;
   }
   
   .menu_bar {
-    display: none;
+    /*display: none;
     position: absolute;
     padding-left: 0px;
     border: 0.5px solid #808080;
@@ -107,21 +107,18 @@ padding-bottom: 70px;
     margin-top: 5px;
     background: #D3D3D3;
     width: 295px;
-    white-space: nowrap;
+    white-space: nowrap;*/
   }
     
   .menu {
-    /*display: inline-block;*/
+    display: inline-block;
     padding-right: 0px;
     background: #FFFFFF;
     border: 0.5px solid #FFFFFF;
     border-width: 6px;
     outline: 0.6px solid #808080;
-    margin-bottom: 0px;
-    margin-top: 0px;
     border-radius: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0px 0px;
   }
   
   .menu_decoration {
