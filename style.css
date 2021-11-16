@@ -106,7 +106,7 @@ padding-bottom: 70px;
     border-radius: 15px;
     margin-top: 15px;
     background: #D3D3D3;
-    max-width: 305px;
+    max-width: 310px;
     white-space: nowrap;
   }
     
@@ -125,14 +125,6 @@ padding-bottom: 70px;
   .menu_decoration {
     border: none;
     box-shadow: none;
-  }
-    
-  .menu a:hover { 
-    color: #32CD32;
-  }
-  
-  .menu border:hover {
-    border: 0.5px solid #32CD32;
   }
 }
 
