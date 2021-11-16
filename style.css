@@ -101,10 +101,10 @@ padding-bottom: 70px;
   cursor: pointer;
 }
 
-/*.menu_bar li > a {
+.menu_bar li > a {
   display: block;
   text-decoration: none;
-}*/
+}
   
   .menu_bar {
     display: none;
