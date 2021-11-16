@@ -97,6 +97,15 @@ padding-bottom: 70px;
     display: inline-block;
   }
   
+  .menu_bar li {
+  cursor: pointer;
+}
+
+/*.menu_bar li > a {
+  display: block;
+  text-decoration: none;
+}*/
+  
   .menu_bar {
     display: none;
     position: absolute;
@@ -105,8 +114,8 @@ padding-bottom: 70px;
     border-right: 0.5px solid #808080;
     border-left: 0.5px solid #808080;
     border-width: 3px;
-    border-radius: 0px;
-    margin-top: -15px;
+    border-radius: 3px;
+    margin-top: -13px;
     margin-left: 10px;
     background: #D3D3D3;
     width: 279px;
