@@ -5,7 +5,7 @@ body {
 /*Корректное отображение названия сайта или раздела, где находится посетитель*/
 
 .correct_title {
-margin: 20px auto;
+padding-top: 30px auto;
 }
 
 /*меню*/
@@ -16,7 +16,7 @@ height: 40px;
 border-radius: 15px;
 position: fixed;
 top: 0;
-/*width: 100%;*/
+width: 90%;
 }
 
 .menu_bar {
