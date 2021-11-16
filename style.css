@@ -100,14 +100,14 @@ padding-bottom: 70px;
   .menu_bar {
     display: none;
     position: absolute;
-    /*padding-left: 0px;
+    padding-left: 0px;
     border: 0.5px solid #808080;
     border-width: 3px;
     border-radius: 0px;
     margin-top: 5px;
     background: #D3D3D3;
     width: 295px;
-    white-space: nowrap;*/
+    white-space: nowrap;
   }
     
   .menu {
@@ -119,6 +119,7 @@ padding-bottom: 70px;
     outline: 0.6px solid #808080;
     border-radius: 0px;
     margin: 0px 0px;
+    width: 295px;
   }
   
   .menu_decoration {
