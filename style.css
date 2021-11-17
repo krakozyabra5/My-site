@@ -106,13 +106,17 @@ padding-bottom: 70px;
     display: inline-block;
   }
   
+  .nav {
+    width: 95%;
+}
+  
   .menu_bar li {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.menu_bar li > a {
-  display: block;
-  text-decoration: none;
+  .menu_bar li > a {
+    display: block;
+    text-decoration: none;
 }
   
   .menu_bar {
