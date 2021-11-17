@@ -19,7 +19,7 @@ border-radius: 15px;
 position: fixed;
 top: 0;
 width: -moz-available;
-margin-right: 10px;
+margin: 0px 10px;
 }
 
 .menu_bar {
