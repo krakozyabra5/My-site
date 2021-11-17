@@ -19,6 +19,8 @@ border-radius: 15px;
 position: fixed;
 top: 0;
 width: -moz-available;
+width: -webkit-fill-available;
+width: stretch;
 margin-right: 10px;
 }
 
