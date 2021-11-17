@@ -105,7 +105,7 @@ padding-bottom: 70px;
 
 /*Протативный дизайн меню*/
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
   .menuBurger {
     display: inline-block;
   }
