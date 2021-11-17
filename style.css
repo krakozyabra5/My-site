@@ -18,7 +18,8 @@ background-color: #D3D3D3;
 border-radius: 15px;
 position: fixed;
 top: 0;
-width: 98.5%;
+width: -moz-available;
+margin-right: 10px;
 }
 
 .menu_bar {
