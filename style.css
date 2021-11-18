@@ -70,6 +70,7 @@ body {
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-direction: reverse;
 }
 
 /*Параметры анимации*/
