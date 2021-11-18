@@ -58,14 +58,14 @@ body {
   word-spacing: 3px;
 }
 
-.menu_rotate {
+.menu_rotate:active {
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.menu_rotate_2 {
+.menu_rotate_2:active  {
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
