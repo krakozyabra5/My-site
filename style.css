@@ -83,6 +83,7 @@ padding-bottom: 70px;
   background: #F3B222;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  animation-iteration-count: ifinite;
   animation-duration: 2s;
 }
 
