@@ -59,6 +59,7 @@ body {
   margin-left: 8px;
   -webkit-animation: rotation 1s ease-in-out;
   animation: rotation 1s ease-in-out;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
@@ -67,7 +68,8 @@ body {
   margin-left: 8px;
   -webkit-animation: rotation 1s ease-in-out;
   animation: rotation 1s ease-in-out;
-   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /*Параметры анимации*/
@@ -102,14 +104,14 @@ body {
 
 @-webkit-keyframes cube {
   100% {
-    transform: translate(150%, 0%) scale(1); 
+    transform: translate(150%, 0%) scale(0.5); 
     border-radius: 0%;
   }
 }
 
 @keyframes cube {
   100% {
-    transform: translate(150%, 0%) scale(1); 
+    transform: translate(150%, 0%) scale(0.5); 
     border-radius: 0%;
   }
 }
