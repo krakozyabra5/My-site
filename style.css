@@ -54,7 +54,7 @@ body {
   word-spacing: 3px;
 }
 
-.menu_rotate {
+.menu_rotate:active{
   margin: 2px;
   margin-left: 8px;
   -webkit-animation: rotation 0.5s ease-in-out;
@@ -62,7 +62,7 @@ body {
   animation-iteration-count: 1;
 }
 
-.menu_rotate_2 {
+.menu_rotate_2:active {
   margin: 2px;
   margin-left: 8px;
   -webkit-animation: rotation 0.5s ease-in-out;
