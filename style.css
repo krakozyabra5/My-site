@@ -34,6 +34,10 @@ body {
   display: none;
 }
 
+.menu_button {
+  margin: 2px;
+  margin-left: 8px;
+}
 .menu a:hover { 
   color: #32CD32;
   box-shadow: 0 0 7px 1px #32CD32;
@@ -55,8 +59,6 @@ body {
 }
 
 .menu_rotate:active{
-  margin: 2px;
-  margin-left: 8px;
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
@@ -64,8 +66,6 @@ body {
 }
 
 .menu_rotate_2:active {
-  margin: 2px;
-  margin-left: 8px;
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
