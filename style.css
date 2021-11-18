@@ -60,6 +60,7 @@ body {
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .menu_rotate_2:active {
@@ -68,6 +69,7 @@ body {
   -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /*Параметры анимации*/
