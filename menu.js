@@ -7,3 +7,9 @@ $(function(){
 });
 });
 });
+
+let menu_rotate_2 document.querySelector('.menu_rotate_2')
+menu_rotate_2.onclick = function () {
+menu_rotate_2.classList.toggle('menu_rotate_2')
+menu_rotate_2.classList.toggle('menu_rotate')
+}
