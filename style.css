@@ -60,7 +60,6 @@ body {
   -webkit-animation: rotation 1s ease-in-out;
   animation: rotation 1s ease-in-out;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .menu_rotate_2 {
@@ -69,7 +68,6 @@ body {
   -webkit-animation: rotation 1s ease-in-out;
   animation: rotation 1s ease-in-out;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 /*Параметры анимации*/
@@ -124,7 +122,7 @@ body {
   }
   
   100% {
-    transform: translateX(0) rotate(1turn);
+    transform: translateX(0) rotate(0.5turn);
   }
 }
 
@@ -134,7 +132,7 @@ body {
   }
   
   100% {
-    transform: translateX(0) rotate(1turn);
+    transform: translateX(0) rotate(0.5turn);
   }
 }
 
