@@ -83,21 +83,21 @@ padding-bottom: 70px;
   background: #F3B222;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 2s;
 }
 
 /*Анимация*/
 
 @-webkit-keyframes cube {
-  25% {
+  100% {
     transform: translate(150%, 0%) scale(1); 
     border-radius: 0%;
   }
 }
 
 @keyframes cube {
-  25% {
+  100% {
     transform: translate(150%, 0%) scale(1); 
     border-radius: 0%;
   }
