@@ -5,29 +5,29 @@ body {
 /*Корректное отображение названия сайта или раздела, где находится посетитель*/
 
 .correct_title {
-padding-top: 45px;
-text-align: center;
-font-family: Arial, sans-serif;
-font-weight: bold;
+  padding-top: 45px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 /*меню*/
 
 .nav {
-background-color: #D3D3D3;
-border-radius: 15px;
-position: fixed;
-top: 0;
-width: -moz-available;
-width: -webkit-fill-available;
-width: stretch;
-margin-right: 10px;
+  background-color: #D3D3D3;
+  border-radius: 15px;
+  position: fixed;
+  top: 0;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: stretch;
+  margin-right: 10px;
 }
 
 .menu_bar {
-list-style: none;
-padding-left: 10px;
-display: flex;
+  list-style: none;
+  padding-left: 10px;
+  display: flex;
 }
 
 .menuBurger {
@@ -55,15 +55,24 @@ display: flex;
 }
 
 .menu_rotate {
-margin: 2px;
-margin-left: 8px;
+  margin: 2px;
+  margin-left: 8px;
+  -webkit-animation: rotation 1s ease-in-out forwards;
+  animation: rotation 1s ease-in-out forwards; 
+}
+
+.menu_rotate_2 {
+  margin: 2px;
+  margin-left: 8px;
+  -webkit-animation: rotation 1s ease-in-out forwards;
+  animation: rotation 1s ease-in-out forwards;
 }
 
 /*Параметры анимации*/
 
 .animation {
-padding: 20px;
-padding-bottom: 70px;
+  padding: 20px;
+  padding-bottom: 70px;
 }
 
 .cube {
@@ -87,7 +96,7 @@ padding-bottom: 70px;
   animation-duration: 1s;
 }
 
-/*Анимация*/
+/*Анимация куба*/
 
 @-webkit-keyframes cube {
   100% {
@@ -100,6 +109,20 @@ padding-bottom: 70px;
   100% {
     transform: translate(150%, 0%) scale(1); 
     border-radius: 0%;
+  }
+}
+
+/*Анимация меню*/
+
+@-webkit-keyframes rotation {
+  100% {
+    rotate(1turn); }
+  }
+}
+
+@keyframes rotation {
+  100% {
+    rotate(1turn);
   }
 }
 
