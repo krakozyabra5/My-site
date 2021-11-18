@@ -118,21 +118,21 @@ body {
 
 @-webkit-keyframes rotation {
   0% {
-    rotate(0);
+    transform: translateX(0) rotate(0);
   }
   
   100% {
-    rotate(1turn); }
+    transform: translateX(0) rotate(1turn);
   }
 }
 
 @keyframes rotation {
   0% {
-    rotate(0);
+    transform: translateX(0) rotate(0);
   }
   
   100% {
-    rotate(1turn);
+    transform: translateX(0) rotate(1turn);
   }
 }
 
