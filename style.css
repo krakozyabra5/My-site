@@ -57,16 +57,16 @@ body {
 .menu_rotate {
   margin: 2px;
   margin-left: 8px;
-  -webkit-animation: rotation 1s ease-in-out;
-  animation: rotation 1s ease-in-out;
+  -webkit-animation: rotation 0.5s ease-in-out;
+  animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
 }
 
 .menu_rotate_2 {
   margin: 2px;
   margin-left: 8px;
-  -webkit-animation: rotation 1s ease-in-out;
-  animation: rotation 1s ease-in-out;
+  -webkit-animation: rotation 0.5s ease-in-out;
+  animation: rotation 0.5s ease-in-out;
   animation-iteration-count: 1;
 }
 
