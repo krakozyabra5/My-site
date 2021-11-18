@@ -73,8 +73,8 @@ padding-bottom: 70px;
   height: 40px;
   border-radius: 50%;
   box-shadow: 2px 2px 3px rgba(0,0,0,.4);
-  -webkit-animation: cube 2s ease-in-out;
-  animation: cube 2s ease-in-out; 
+  -webkit-animation: cube 1s ease-in-out;
+  animation: cube 1s ease-in-out; 
   animation-fill-mode: forwards;
 }
 
@@ -84,7 +84,7 @@ padding-bottom: 70px;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 /*Анимация*/
