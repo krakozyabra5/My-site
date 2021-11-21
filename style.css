@@ -38,7 +38,7 @@ body {
   margin: 2px;
   margin-left: 8px;
   display: inline-block;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .menu a:hover { 
   color: #32CD32;
