@@ -58,11 +58,8 @@ body {
   word-spacing: 3px;
 }
 
-.menu_rotate:hover {
-  -webkit-animation: rotation 0.5s ease-in-out;
-  animation: rotation 0.5s ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.menu_rotate.active {
+  transform: rotate(90deg);
 }
 
 /*Параметры анимации*/
