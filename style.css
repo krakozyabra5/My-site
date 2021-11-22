@@ -164,6 +164,7 @@ body {
     width: 279px;
     white-space: nowrap;
     overflow:auto
+    max-height: 100px;
   }
     
   /*.menu {
