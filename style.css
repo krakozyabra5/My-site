@@ -137,17 +137,17 @@ body {
     display: inline-block;
   }
   
-  .menu_bar a {
+  a {
     border: none;
     box-shadow: none;
 }
-  .menu_bar li a {
+  li a {
     display: block;
     text-decoration: none;
     cursor: pointer;
 }
   
-  .menu_bar li {
+  li {
     display: inline-block;
     padding-right: 0px;
     background: #FFFFFF;
