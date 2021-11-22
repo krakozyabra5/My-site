@@ -137,12 +137,15 @@ body {
     display: inline-block;
   }
   
-  .menu_bar li > a {
-    /*display: block;
-    text-decoration: none;*/
+  .menu_bar a {
     border: none;
     box-shadow: none;
 }
+  
+  .menu_bar li {
+    display: block;
+    text-decoration: none;
+  }
   
   .menu_bar > li {
     display: inline-block;
