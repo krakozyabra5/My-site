@@ -138,8 +138,8 @@ body {
   }
   
   .menu_bar li > a {
-    display: block;
-    text-decoration: none;
+    /*display: block;
+    text-decoration: none;*/
     border: none;
     box-shadow: none;
 }
