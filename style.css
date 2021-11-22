@@ -160,7 +160,7 @@ body {
   }
   
   .menu_bar {
-    display: none;
+    display: flex;
     position: absolute;
     padding-left: 0px;
     padding-top: 0px;
