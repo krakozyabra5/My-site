@@ -147,7 +147,7 @@ body {
     text-decoration: none;
   }
   
-  .menu_bar > li {
+  .menu_bar ~ li {
     display: inline-block;
     padding-right: 0px;
     background: #FFFFFF;
