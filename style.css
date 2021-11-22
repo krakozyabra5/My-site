@@ -142,22 +142,11 @@ body {
     box-shadow: none;
 }
   
-  .menu_bar > li {
+  .menu_bar li > a {
     display: block;
     text-decoration: none;
-  }
-  
-  .menu_bar > li {
-    display: inline-block;
-    padding-right: 0px;
-    background: #FFFFFF;
-    border: 0.5px solid #FFFFFF;
-    border-width: 6px;
-    outline: 0.6px solid #808080;
-    border-radius: 0px;
-    margin: 0px 0px;
-    width: 267px;
     cursor: pointer;
+  }
   
   .menu_bar {
     display: none;
