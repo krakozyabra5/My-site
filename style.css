@@ -137,17 +137,17 @@ body {
     display: inline-block;
   }
   
-  .menu_bar a {
+  .menu_bar ~ a {
     border: none;
     box-shadow: none;
 }
   
-  .menu_bar li {
+  .menu_bar ~ li {
     display: block;
     text-decoration: none;
   }
   
-  .menu_bar > li {
+ /* .menu_bar > li {
     display: inline-block;
     padding-right: 0px;
     background: #FFFFFF;
@@ -157,7 +157,7 @@ body {
     border-radius: 0px;
     margin: 0px 0px;
     width: 267px;
-    cursor: pointer;
+    cursor: pointer;*/
   
   .menu_bar {
     display: none;
