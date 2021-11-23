@@ -143,8 +143,8 @@ body {
     display: block;
     padding-right: 0px;
     background: #FFFFFF;
-    border-top: 0.5px solid #FFFFFF;
-    border-bottom: 0.5px solid #FFFFFF;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
     outline: 0.6px solid #808080;
     border-radius: 0px;
     margin: 0px 0px;
