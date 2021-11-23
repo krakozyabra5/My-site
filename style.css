@@ -143,12 +143,10 @@ body {
     display: block;
     padding-right: 0px;
     background: #FFFFFF;
-    border: 0.5px solid #FFFFFF;
-    border-width: 6px;
+    margin: 3px;
     outline: 0.6px solid #808080;
     border-radius: 0px;
     margin: 0px 0px;
-    width: 267px;
     cursor: pointer;
   }
 
