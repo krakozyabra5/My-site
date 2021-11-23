@@ -56,8 +56,9 @@ body {
   word-spacing: 3px;
 }
 
-.menu a:hover {
-  color: #32CD32;
+.menu_bar li:hover {
+  background-color: #32CD32;
+  
   box-shadow: 0 0 7px 1px #32CD32;
 }
 
