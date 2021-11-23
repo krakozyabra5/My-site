@@ -62,10 +62,6 @@ body {
   box-shadow: 0 0 7px 1px #32CD32;
 }
 
-.menu_bar li:hover {
-  background-color: #32CD32;
-}
-
 .menu_rotate.active {
   transform: rotate(90deg);
 }
@@ -158,6 +154,7 @@ body {
 
   .menu_bar a {
     border: none;
+    border-radius: 0px;
     box-shadow: none;
     display: block;
     text-decoration: none;
