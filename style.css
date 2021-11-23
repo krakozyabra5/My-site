@@ -60,6 +60,7 @@ body {
   background-color: #32CD32;
   color: #FFFFFF;
   box-shadow: 0 0 7px 1px #32CD32;
+  li  background-color: #32CD32;
 }
 
 .menu_rotate.active {
