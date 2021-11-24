@@ -32,7 +32,7 @@ body {
 /* Корректное отображение названия сайта или раздела, где находится посетитель */
 
 .correct_title {
-  padding-top: 45px;
+  margin-top: 55px;
   text-align: center;
   font-family: Arial, sans-serif;
   font-weight: bold;
