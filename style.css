@@ -159,9 +159,33 @@ body {
   }
 }
 
-/* Протативный дизайн меню */
+
 
 @media (max-width: 1000px) {
+  
+/* дизайн страницы для телефонов */
+  
+  .page {
+    width: auto;
+    margin: 0px auto;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .center {
+    width: auto;
+    margin: 0px auto;
+    word-wrap: break-word;
+  }
+
+  .right {
+    display: none;
+  }
+  
+/* дизайн меню для телефонов */
+  
   .menuBurger {
     display: inline-block;
   }
