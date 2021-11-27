@@ -42,13 +42,10 @@ body {
 
 .nav {
   background-color: #D3D3D3;
-  border-radius: 15px;
   position: fixed;
+  border-bottom: 2px solid #808080;
   top: 0;
-  width: -moz-available;
-  width: -webkit-fill-available;
-  width: stretch;
-  margin-right: 10px;
+  width: 100%;
 }
 
 .menu_bar {
@@ -161,8 +158,7 @@ body {
 
 
 
-@media (max-width: 1000px) {
-  
+@media (max-width: 1140px) {
 /* дизайн страницы для телефонов */
   
   .page {
@@ -185,6 +181,10 @@ body {
   }
   
 /* дизайн меню для телефонов */
+  
+  .nav {
+    border: none;
+  }
   
   .menuBurger {
     display: inline-block;
