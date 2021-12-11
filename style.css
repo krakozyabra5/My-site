@@ -49,6 +49,7 @@ body {
 }
 
 .menu {
+  display: inline-flex;
   position: relative;
   top: 8px;
   left: 10px;
