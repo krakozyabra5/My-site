@@ -168,6 +168,16 @@ background-size: 20px;
   height: 117px;
 }
 
+.hobbies_name {
+  text-align: center;
+}
+
+.hobbies_ul {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
 /* Параметры анимации */
 
 .animation {
