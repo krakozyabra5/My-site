@@ -204,6 +204,10 @@ background-size: 20px;
   font-size: 18px;
 }
 
+.my_hobbies.active {
+  transform: translate3d(-20px,0px,0px) /*rotatey(20deg);*/
+}
+
 /* Параметры анимации */
 
 .animation {
@@ -270,10 +274,23 @@ background-size: 20px;
   }
 }
 
+/* Анимация хобби*/
 
+@keyframes translate3d {
+0% {
+    transform: translateX(0px) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-20) rotate(20deg);
+  }
+}
+
+/* Протативный дизайн */
 
 @media (max-width: 1160px) {
-/* дизайн страницы для телефонов */
+
+  /* дизайн страницы для телефонов */
   
   .page {
     width: auto;
