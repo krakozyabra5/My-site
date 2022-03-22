@@ -170,6 +170,10 @@ background-size: 20px;
 
 /* Контент */
 
+.center p {
+  margin-left: 5px;
+}
+
 .my_hobbies {
   margin: 10px;
   display: block;
