@@ -5,13 +5,13 @@ body {
 }
 
 .page {
-  width: 910px;
+  width: 1200px;
   margin: 0px auto;
 }
 
 .left {
   float: left;
-  width: 190px;
+  width: 335px;
   margin: 0px auto;
   background-color: #98FF98;
 }
@@ -24,7 +24,7 @@ body {
 
 .right {
   float: right;
-  width: 190px;
+  width: 335px;
   margin: 0px auto;
   background-color: #98FF98;
 }
