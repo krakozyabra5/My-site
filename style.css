@@ -1,7 +1,7 @@
 /* Разметка страницы и общие правила */
 
 body {
-  background: #080808 url("/images/2016/background.jpg") repeat-y center top;
+  background: #080808 url("background.jpeg") repeat-y center top;
 }
 
 .page {
