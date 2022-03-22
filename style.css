@@ -175,7 +175,8 @@ background-size: 20px;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  text-color: #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 
 .hobbies_ul {
@@ -185,7 +186,8 @@ background-size: 20px;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  text-color: #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 
 /* Параметры анимации */
