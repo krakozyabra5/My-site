@@ -170,7 +170,10 @@ background-size: 20px;
 
 .hobbies_name {
   text-align: center;
-  
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #DAA520;
 }
 
 .hobbies_ul {
