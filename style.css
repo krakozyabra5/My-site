@@ -13,14 +13,12 @@ body {
   float: left;
   width: 190px;
   margin: 0px auto;
-  word-wrap: break-word;
   background-color: #98FF98;
 }
 
 .center {
   width: 530px;
   margin: 0px auto;
-  word-wrap: break-word;
   padding: 10px;
 }
 
@@ -28,7 +26,6 @@ body {
   float: right;
   width: 190px;
   margin: 0px auto;
-  word-wrap: break-word;
   background-color: #98FF98;
 }
 
