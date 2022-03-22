@@ -14,6 +14,8 @@ body {
   width: 335px;
   margin: 0px auto;
   background-color: #363636;
+  z-index: -20;
+  position: relative;
 }
 
 .center {
@@ -166,21 +168,24 @@ background-size: 20px;
   display: block;
   width: 230px;
   height: 117px;
+  position: relative;
+  top: -25px;
 }
 
 .hobbies_name {
-  width: 100%;
   background-color: #171819;
-  text-align: center;
+  padding-left: 15px;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #FFFFFF;
   font-size: 18px;
+  top: -20px;
+  position: relative;
+  z-index: -10;
 }
 
 .hobbies_ul {
-  width: 100%;
   background-color: #181d23;
   text-align: center;
   margin-top: 0px;
