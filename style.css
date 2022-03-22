@@ -1,7 +1,7 @@
 /* Разметка страницы и общие правила */
 
 body {
-  background: #333741;
+  background: #080808 url("/images/2016/background.jpg") repeat-y center top;
 }
 
 .page {
@@ -16,19 +16,25 @@ body {
   background-color: #363636;
   z-index: -20;
   position: relative;
+  color: #FFFFFF;
 }
 
 .center {
   width: 530px;
   margin: 0px auto;
   padding: 10px;
+  background: #333741;
+  color: #FFFFFF;
 }
 
 .right {
-  float: right;
+  float: left;
   width: 335px;
   margin: 0px auto;
-  background-color: #98FF98;
+  background-color: #363636;
+  z-index: -20;
+  position: relative;
+  color: #FFFFFF;
 }
 
 /* Корректное отображение названия сайта или раздела, где находится посетитель */
@@ -161,7 +167,7 @@ background-size: 20px;
   transform: rotate(90deg);
 }
 
-/* Нормальное отображение контента */
+/* Контент */
 
 .my_hobbies {
   margin: 10px;
@@ -178,7 +184,6 @@ background-size: 20px;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #FFFFFF;
   font-size: 18px;
   top: -20px;
   position: relative;
@@ -191,7 +196,6 @@ background-size: 20px;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #FFFFFF;
   font-size: 18px;
 }
 
