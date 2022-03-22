@@ -181,6 +181,7 @@ background-size: 20px;
   height: 117px;
   position: relative;
   top: -25px;
+  cursor: pointer;
 }
 
 .hobbies_name {
@@ -204,7 +205,7 @@ background-size: 20px;
   font-size: 18px;
 }
 
-.my_hobbies.active {
+.my_hobbies:hover {
   transform: translate3d(-20px,0px,0px) /*rotatey(20deg);*/
 }
 
