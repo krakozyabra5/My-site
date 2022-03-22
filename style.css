@@ -22,13 +22,13 @@ body {
 .center {
   width: 530px;
   margin: 0px auto;
-  padding: 10px;
+  padding-top: 1px;
   background: #333741;
   color: #FFFFFF;
 }
 
 .right {
-  float: left;
+  float: right;
   width: 335px;
   margin: 0px auto;
   background-color: #363636;
