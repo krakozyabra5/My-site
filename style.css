@@ -162,6 +162,13 @@ background-size: 20px;
   transform: rotate(90deg);
 }
 
+/* Нормальное отображение контента */
+
+.my_hobbies {
+  margin: 10px;
+  display: block;
+}
+
 /* Параметры анимации */
 
 .animation {
