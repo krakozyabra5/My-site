@@ -2,6 +2,7 @@
 
 body {
   background: #080808 url("background.jpeg") repeat-y center top;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .page {
@@ -168,8 +169,6 @@ background-size: 20px;
 }
 
 /* Контент */
-
-font-family: 'Quicksand', sans-serif;
 
 h1 {
   background-color: #181d23;
