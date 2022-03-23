@@ -8,6 +8,7 @@ body {
 .page {
   width: 1200px;
   margin: 0px auto;
+  margin-top: 130px;
 }
 
 .left {
@@ -34,15 +35,6 @@ body {
   background-color: #363636;
   position: relative;
   color: #FFFFFF;
-}
-
-/* Корректное отображение названия сайта или раздела, где находится посетитель */
-
-.correct_title {
-  margin-top: 55px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
 }
 
 /* меню */
