@@ -13,7 +13,7 @@ body {
   float: left;
   width: 335px;
   margin: 0px auto;
-  background-color: #363636;
+  background-color: #141414;
   position: relative;
   color: #FFFFFF;
 }
@@ -176,12 +176,15 @@ background-size: 20px;
 .my_hobbies {
   margin: 10px;
   display: block;
-  width: 230px;
-  height: 117px;
+  width: 260px;
+  height: 155px;
   position: relative;
-  top: -25px;
+  bottom: 25px;
+  left: 30px;
   cursor: pointer;
   transition: transform 0.4s;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .hobbies_name {
@@ -191,7 +194,7 @@ background-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 18px;
-  top: -20px;
+  bottom: 20px;
   position: relative;
 }
 
@@ -205,7 +208,7 @@ background-size: 20px;
 }
 
 .my_hobbies:hover {
-  transform: translate(-20px,0px) perspective(500px) rotateY(30deg) 
+  transform: translate(-20px,0px) perspective(500px) rotateY(30deg);
 }
 
 /* Параметры анимации */
