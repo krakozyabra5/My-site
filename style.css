@@ -14,7 +14,6 @@ body {
   width: 335px;
   margin: 0px auto;
   background-color: #363636;
-  z-index: -20;
   position: relative;
   color: #FFFFFF;
 }
@@ -32,7 +31,6 @@ body {
   width: 335px;
   margin: 0px auto;
   background-color: #363636;
-  z-index: -20;
   position: relative;
   color: #FFFFFF;
 }
@@ -55,6 +53,7 @@ body {
   top: 0;
   width: 100%;
   left: 0px;
+  z-index: 10;
 }
 
 .menu {
@@ -193,7 +192,6 @@ background-size: 20px;
   font-size: 18px;
   top: -20px;
   position: relative;
-  z-index: -10;
 }
 
 .hobbies_ul {
@@ -229,7 +227,7 @@ background-size: 20px;
 }
 
 .one {
-  z-index: -100;
+  z-index: 5;
   background: #F3B222;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
