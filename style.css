@@ -169,6 +169,14 @@ background-size: 20px;
 
 /* Контент */
 
+h1 {
+  background-color: #181d23;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
 .center p {
   margin-left: 5px;
 }
