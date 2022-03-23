@@ -205,7 +205,7 @@ background-size: 20px;
 }
 
 .my_hobbies:hover {
-  transform: perspective(500px) rotateY(30deg) 
+  transform: translate(-20px,0px) perspective(500px) rotateY(30deg) 
 }
 
 /* Параметры анимации */
