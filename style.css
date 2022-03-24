@@ -236,6 +236,20 @@ h1 {
   border: 15px solid #171819;
 }
 
+.snake {
+  width: 10px;
+  display: block;
+  background-color: #FFFFFF;
+  height: 10px;
+}
+
+.apple {
+  width: 10px;
+  display: block;
+  background-color: #FF0000;
+  height: 10px;
+}
+
 /* Параметры анимации */
 
 .animation {
