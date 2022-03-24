@@ -370,6 +370,13 @@ h1 {
     margin-top: 7px;
     margin-right: 0px;
   }
+
+  .search {
+    height: 30px;
+    line-height: 39px;
+    width: 90px;
+    background: #f5f5f5;
+  }
 }
 
  
