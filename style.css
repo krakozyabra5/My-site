@@ -245,12 +245,14 @@ h1 {
 .star {
   position: relative;
   width: 20px;
+  left: 235px;
+  bottom: 26px;
 }
 
 .score {
   position: relative;
-  width: 30px;
-  height: 20px;
+  left: 145px;
+  bottom: 69px;
 }
 
 .play_button {
