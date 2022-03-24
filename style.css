@@ -228,7 +228,27 @@ h1 {
 }
 
 .game_menu {
-  
+  background-color: #171819;
+}
+
+.max_score {
+  position: relative;
+  left: 21px;
+  bottom: 10px;
+}
+
+.star {
+  position: relative;
+}
+
+.score {
+  position: relative;
+}
+
+.play {
+  position: relative;
+  left: 300px;
+  bottom: 125px;
 }
 
 .game {
