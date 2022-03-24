@@ -241,10 +241,10 @@ h1 {
 
 .max_score {
   position: relative;
-  width: 30px;
+  width: 38px;
   height: 20px;
-  top: 5px;
-  left: 15px;
+  left: 79px;
+  bottom: 38px;
 }
 
 .star {
