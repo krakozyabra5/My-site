@@ -300,6 +300,7 @@ h1 {
   .page {
     width: auto;
     margin: 0px auto;
+    margin-top: 130px;
   }
 
   .left {
@@ -309,7 +310,6 @@ h1 {
   .center {
     width: auto;
     margin: 0px auto;
-    word-wrap: break-word;
   }
 
   .right {
