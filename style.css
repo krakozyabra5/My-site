@@ -229,12 +229,17 @@ h1 {
 
 .game_menu {
   background-color: #171819;
+  position: relative;
+  bottom: 20px;
+  font-size: 18px;
 }
 
 .max_score {
   position: relative;
-  left: 21px;
-  bottom: 10px;
+  width: 30px;
+  height: 20px;
+  top: 5px;
+  left: 15px;
 }
 
 .star {
@@ -243,10 +248,13 @@ h1 {
 
 .score {
   position: relative;
+  width: 30px;
+  height: 20px;
 }
 
 .play {
   position: relative;
+  top: 5px;
   left: 300px;
   bottom: 125px;
 }
