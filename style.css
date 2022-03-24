@@ -234,6 +234,11 @@ h1 {
   font-size: 18px;
 }
 
+.game_menu p:first-child {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
 .max_score {
   position: relative;
   width: 30px;
@@ -244,6 +249,7 @@ h1 {
 
 .star {
   position: relative;
+  width: 20px;
 }
 
 .score {
