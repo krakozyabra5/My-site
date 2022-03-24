@@ -227,8 +227,13 @@ h1 {
   font-size: 18px;
 }
 
+.game_menu {
+  
+}
+
 .game {
   height: 470px;
+  border: 15px solid #171819;
 }
 
 /* Параметры анимации */
