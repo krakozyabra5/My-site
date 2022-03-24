@@ -368,13 +368,13 @@ h1 {
 
   .search-block {
     margin-top: 7px;
-    margin-left: 10px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 170px;
   }
 
   .search {
-    width: 110px;
+    width: 80px;
   }
 }
 
