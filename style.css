@@ -332,7 +332,7 @@ h1 {
 
   .menu_bar li {
     outline: 0.6px solid #808080;
-}
+  }
 
   .menu_bar a {
     padding-top: 9px;
@@ -358,6 +358,12 @@ h1 {
     white-space: nowrap;
     overflow: auto;
     max-height: 180px;
+  }
+
+  .menu_image {
+    margin-right: 0px;
+    top: 0px;
+    left: 10px;
   }
 }
 
