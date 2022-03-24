@@ -185,8 +185,13 @@ h1 {
   left: 30px;
   cursor: pointer;
   transition: transform 0.4s;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.my_hobbies:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .hobbies_name {
