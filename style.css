@@ -32,7 +32,7 @@ body {
   float: right;
   width: 335px;
   margin: 0px auto;
-  background-color: #363636;
+  background-color: #141414;
   position: relative;
   color: #FFFFFF;
 }
@@ -228,7 +228,7 @@ h1 {
 }
 
 .game {
-  
+  height: 470px;
 }
 
 /* Параметры анимации */
