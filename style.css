@@ -252,11 +252,18 @@ h1 {
   height: 20px;
 }
 
-.play {
+.play_button {
   position: relative;
-  top: 5px;
-  left: 300px;
-  bottom: 125px;
+  left: 290px;
+  bottom: 115px;
+  width: 35px;
+  height: 32px;
+  background-color: #f5f6fa;
+  border: 1px solid #dbdfec;
+  line-height: 39px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .game {
