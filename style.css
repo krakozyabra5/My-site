@@ -218,6 +218,19 @@ h1 {
   transform: translate(-20px,0px) perspective(500px) rotateY(30deg);
 }
 
+.my_web_game {
+  background-color: #181d23;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.game {
+  
+}
+
 /* Параметры анимации */
 
 .animation {
