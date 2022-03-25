@@ -31,6 +31,7 @@ body {
 .right {
   float: right;
   width: 335px;
+  height: 575px;
   margin: 0px auto;
   background-color: #141414;
   position: relative;
@@ -253,25 +254,31 @@ h1 {
   position: relative;
   left: 145px;
   bottom: 69px;
+  width: 220px;
 }
 
 .play_button {
   position: relative;
   left: 290px;
   bottom: 115px;
-  width: 35px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   background-color: #f5f6fa;
   border: 1px solid #dbdfec;
   line-height: 39px;
-  border-radius: 4px;
+  border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .game {
-  height: 470px;
-  border: 15px solid #171819;
+  position: relative;
+  height: 450px;
+  bottom: 10px;
+  border-left: 10px solid #000;
+  border-right: 10px solid #000;
+  border-bottom: 10px solid #000;
+  box-shadow: 0px -10px 0px #000;
 }
 
 .snake {
