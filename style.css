@@ -229,8 +229,8 @@ h1 {
 }
 
 .game_menu {
-  background-color: #171819;
   position: relative;
+  background-color: #171819;
   height: 55px;
   bottom: 20px;
   font-size: 18px;
@@ -283,17 +283,23 @@ h1 {
 }
 
 .snake {
-  width: 10px;
-  display: block;
+  position: relative;
   background-color: #FFFFFF;
+  display: block;
+  width: 10px;
   height: 10px;
+  top: 250px;
+  left: 153px;
 }
 
 .apple {
-  width: 10px;
-  display: block;
+  position: relative;
   background-color: #FF0000;
+  display: block;
+  width: 10px;
   height: 10px;
+  top: 80px;
+  left: 153px;
 }
 
 /* Параметры анимации */
