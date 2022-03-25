@@ -231,6 +231,7 @@ h1 {
 .game_menu {
   background-color: #171819;
   position: relative;
+  height: 55px;
   bottom: 20px;
   font-size: 18px;
 }
