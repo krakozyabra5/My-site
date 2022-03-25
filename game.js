@@ -122,7 +122,7 @@
         }
       });
     }
-    document.addEventListener('keydown', function (e) {  //регистрируем нажатие на стрелки (вторая часть мешает двигаться "в себя")
+    document.addEventListener('keydown', function (e) {  //регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
       if (e.which === 37 && snake.dx === 0) {  //стрелка влево
         snake.dx = -grid;
         snake.dy = 0;
