@@ -53,30 +53,54 @@
       context.clearRect(0, 0, canvas.width, canvas.height); //очистка поля по координатам
       snake.x += snake.dx;  //двигаем змейку с нужной скоростью
       snake.y += snake.dy;
-      if (snake.x < 0) {
-        snake.x = 160;
-        snake.y = 160;
+      if (snake.x < 0) {  //конец игры если змейка касается поля по горизонтали слева
+        snake.x = 200;
+        snake.y = 350;
         snake.cells = [];
         snake.maxCells = 4;
-        snake.dx = grid;
-        snake.dy = 0;
-        // Ставим яблочко в случайное место
-        apple.x = getRandomInt(0, 25) * grid;
-        apple.y = getRandomInt(0, 25) * grid;  //конец игры если змейка касается края поля по горизонтали
+        snake.dx = 0;
+        snake.dy = -grid;
+        apple.x = getRandomInt(0, 25) * grid;  //Генерим яблоко
+        apple.y = getRandomInt(0, 25) * grid;  
       }
       else if (snake.x >= canvas.width) {
         snake.x = 0;
       }
-      if (snake.y < 0) {
-        snake.x = 160;
-        snake.y = 160;
+      if (snake.x > 390) {  //конец игры если змейка касается поля по горизонтали справа
+        snake.x = 200;
+        snake.y = 350;
         snake.cells = [];
         snake.maxCells = 4;
-        snake.dx = grid;
-        snake.dy = 0;
-        // Ставим яблочко в случайное место
-        apple.x = getRandomInt(0, 25) * grid;
-        apple.y = getRandomInt(0, 25) * grid;  //конец игры если змейка касается края поля по вертикали
+        snake.dx = 0;
+        snake.dy = -grid;
+        apple.x = getRandomInt(0, 25) * grid;  //Генерим яблоко
+        apple.y = getRandomInt(0, 25) * grid;  
+      }
+      else if (snake.x >= canvas.width) {
+        snake.x = 0;
+      }
+      if (snake.y < 0) {  //конец игры если змейка касается поля по вертикали сверху
+        snake.x = 200;
+        snake.y = 350;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = 0;
+        snake.dy = -grid;
+        apple.x = getRandomInt(0, 25) * grid;  //Генерим яблоко
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+      else if (snake.y >= canvas.height) {
+        snake.y = 0;
+      }
+      if (snake.y > 390) {  //конец игры если змейка касается поля по вертикали снизу
+        snake.x = 200;
+        snake.y = 350;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = 0;
+        snake.dy = -grid;
+        apple.x = getRandomInt(0, 25) * grid;  //Генерим яблоко
+        apple.y = getRandomInt(0, 25) * grid;
       }
       else if (snake.y >= canvas.height) {
         snake.y = 0;
