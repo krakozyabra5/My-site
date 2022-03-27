@@ -1,124 +1,153 @@
-    let image = document.querySelector('.apple');
-    let canvas = document.querySelector('.game');
-    let context = canvas.getContext('2d');
-    let grid = 16;
-    let count = 0;
-    let snake = {
-      x: 192,  //положение при старте
-      y: 352,
-      dx: 0,  //направление при старте
-      dy: -grid,
-      cells: [],
-      maxCells: 6 //длина змейки при старте
+let image = document.querySelector('.apple');
+let canvas = document.querySelector('.game');
+let context = canvas.getContext('2d');
+let grid = 16;
+let count = 0;
+let snake = {  
+//положение при старте
+  x: 192,
+  y: 352,
+//направление движения при старте
+  dx: 0,
+  dy: -grid,
+  cells: [],
+//длина змейки при старте
+      maxCells: 6,    
     };
-    let apple = {
-      x: 0, //начальные координаты яблока
-      y: 0
+    let apple = {  
+//начальные координаты яблока
+       x: 0,
+       y: 0,  
     };
-    apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+//генерим яблоко
+    apple.x = getRandomInt(1, 24) * grid;
     apple.y = getRandomInt(1, 24) * grid;
+//генератор случайных чисел
     function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
-    }  //генератор случайных чисел
-    function loop() {  //игровой цикл
+    }
+//игровой цикл
+    function loop() {  
       requestAnimationFrame(loop);
-      if (++count < 4) {  //скорость обновления кадров
-        return;
-      }
-      count = 0;
-      context.clearRect(0, 0, canvas.width, canvas.height); //очистка поля по координатам после столкновения с полем
-      snake.x += snake.dx;  //двигаем змейку с нужной скоростью
-      snake.y += snake.dy;
-      if (snake.x < 0) {  //конец игры если змейка касается поля по горизонтали слева
-        snake.x = 192;
-        snake.y = 352;
-        snake.cells = [];
-        snake.maxCells = 6;
-        snake.dx = 0;
-        snake.dy = -grid;
-        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
-        apple.y = getRandomInt(1, 24) * grid;  
-      }
-      if (snake.x > 390) {  //конец игры если змейка касается поля по горизонтали справа
-        snake.x = 192;
-        snake.y = 352;
-        snake.cells = [];
-        snake.maxCells = 6;
-        snake.dx = 0;
-        snake.dy = -grid;
-        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
-        apple.y = getRandomInt(1, 24) * grid;  
-      }
-      if (snake.y < 0) {  //конец игры если змейка касается поля по вертикали сверху
-        snake.x = 192;
-        snake.y = 352;
-        snake.cells = [];
-        snake.maxCells = 6;
-        snake.dx = 0;
-        snake.dy = -grid;
-        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+//скорость обновления кадров
+    if (++count < 4) {
+      return;
+    }
+    count = 0;
+//очистка поля по координатам после столкновения с полем
+    context.clearRect(0, 0, canvas.width, canvas.height);
+//двигаем змейку с нужной скоростью
+    snake.x += snake.dx;
+    snake.y += snake.dy;
+//конец игры если змейка касается поля по горизонтали слева
+    if (snake.x < 0) {
+      snake.x = 192;
+      snake.y = 352;
+      snake.cells = [];
+      snake.maxCells = 6;
+      snake.dx = 0;
+      snake.dy = -grid;
+//генерим яблоко
+      apple.x = getRandomInt(1, 24) * grid;
+      apple.y = getRandomInt(1, 24) * grid;
+    }
+//конец игры если змейка касается поля по горизонтали справа
+    if (snake.x > 390) {
+      snake.x = 192;
+      snake.y = 352;
+      snake.cells = [];
+      snake.maxCells = 6;
+      snake.dx = 0;
+      snake.dy = -grid;
+//генерим яблоко
+      apple.x = getRandomInt(1, 24) * grid;
+      apple.y = getRandomInt(1, 24) * grid;
+    }
+//конец игры если змейка касается поля по вертикали сверху
+    if (snake.y < 0) {
+      snake.x = 192;
+      snake.y = 352;
+      snake.cells = [];
+      snake.maxCells = 6;
+      snake.dx = 0;
+      snake.dy = -grid;
+//генерим яблоко
+      apple.x = getRandomInt(1, 24) * grid;
+      apple.y = getRandomInt(1, 24) * grid;
+    }
+//конец игры если змейка касается поля по вертикали снизу
+    if (snake.y > 390) {
+      snake.x = 192;
+      snake.y = 352;
+      snake.cells = [];
+      snake.maxCells = 6;
+      snake.dx = 0;
+      snake.dy = -grid;
+//генерим яблоко
+      apple.x = getRandomInt(1, 24) * grid;
+      apple.y = getRandomInt(1, 24) * grid;
+    }
+//добавляем клетку перед змейкой по координатам (поменяв x и y можно инвертировать управление относительно осей x и y)
+    snake.cells.unshift({ x: snake.x, y: snake.y });
+    if (snake.cells.length > snake.maxCells) {
+//удаляем последний элемент из массива змейки (лишнюю клетку хвоста)
+      snake.cells.pop();
+    }
+//рисуем яблоко (по коодинатам)
+    context.fillStyle = 'rgba(0, 0, 0, 0)';
+    context.drawImage(image, 0, 0, apple.x, apple.y, apple.x, apple.y, 16, 16);
+    context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
+//рисуем ВСЕ клетки змейки (по коодинатам)
+    context.fillStyle = 'yellow';
+    snake.cells.forEach(function (cell, index) {
+      context.fillRect(cell.x, cell.y, grid - 0, grid - 0);
+//если змейка добралась до яблока...
+      if (cell.x == apple.x && cell.y == apple.y) {
+//увеличиваем длину змейки
+        snake.maxCells = snake.maxCells + 1;
+//генерим яблоко
+        apple.x = getRandomInt(1, 24) * grid; 
         apple.y = getRandomInt(1, 24) * grid;
       }
-      if (snake.y > 390) {  //конец игры если змейка касается поля по вертикали снизу
-        snake.x = 192;
-        snake.y = 352;
-        snake.cells = [];
-        snake.maxCells = 6;
-        snake.dx = 0;
-        snake.dy = -grid;
-        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
-        apple.y = getRandomInt(1, 24) * grid;
-      }
-
-      snake.cells.unshift({ x: snake.x, y: snake.y });  //добавляем клетку перед змейкой по координатам (поменяв x и y можно инвертировать управление относительно осей x и y)
-      if (snake.cells.length > snake.maxCells) {
-        snake.cells.pop();  //удаляем последний элемент из массива змейки (лишнюю клетку хвоста)
-      }
-      context.fillStyle = 'rgba(0, 0, 0, 0)';  //рисуем яблоко (по коодинатам)
-      context.drawImage(image, 0, 0, apple.x, apple.y, apple.x, apple.y, 16, 16);
-      context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
-      context.fillStyle = 'yellow';  //рисуем ВСЕ клетки змейки (по коодинатам)
-      snake.cells.forEach(function (cell, index) {
-        context.fillRect(cell.x, cell.y, grid - 0, grid - 0);
-        if (cell.x == apple.x && cell.y == apple.y) {  //если змейка добралась до яблока...
-          snake.maxCells = snake.maxCells + 1;  //увеличиваем длину змейки
-          apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+//проверяем, не столкнулась ли змейка сама с собой, сравнивая координаты всех её клеток
+      for (let i = index + 1; i < snake.cells.length; i++) {
+//если такие клетки есть — начинаем игру заново
+        if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+          snake.x = 192;
+          snake.y = 352;
+          snake.cells = [];
+          snake.maxCells = 6;
+          snake.dx = 0;
+          snake.dy = -grid;
+//генерим яблоко
+          apple.x = getRandomInt(1, 24) * grid;
           apple.y = getRandomInt(1, 24) * grid;
         }
-        for (var i = index + 1; i < snake.cells.length; i++) {  //проверяем, не столкнулась ли змея сама с собой, сравнивая координаты всех её клеток
-          if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {  //если такие клетки есть — начинаем игру заново
-            snake.x = 192;
-            snake.y = 352;
-            snake.cells = [];
-            snake.maxCells = 6;
-            snake.dx = 0;
-            snake.dy = -grid;
-            apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
-            apple.y = getRandomInt(1, 24) * grid;
-          }
-        }
-      });
-    }
-    document.addEventListener('keydown', function (e) {  //регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
-      if (e.keyCode == 37 & snake.dx == 0) {  //стрелка влево
-        snake.dx = -grid;
-        snake.dy = 0;
-      }
-      else if (e.keyCode == 38 && snake.dy == 0) {  //стрелка вверх
-        snake.dy = -grid;
-        snake.dx = 0;
-      }
-      else if (e.keyCode == 39 && snake.dx == 0) {  //стрелка вправо
-        snake.dx = grid;
-        snake.dy = 0;
-      }
-      else if (e.keyCode == 40 && snake.dy == 0) {  //стрелка вниз
-        snake.dy = grid;
-        snake.dx = 0;
       }
     });
-    requestAnimationFrame(loop);  //всё-время запускаем игру
-  </script>
-</body>
-
-</html>
+  }
+//регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
+  document.addEventListener('keydown', function (e) {
+//стрелка влево
+    if (e.keyCode == 37 & snake.dx == 0) {
+      snake.dx = -grid;
+      snake.dy = 0;
+    }
+//стрелка вверх
+    else if (e.keyCode == 38 && snake.dy == 0) {
+      snake.dy = -grid;
+      snake.dx = 0;
+    }
+//стрелка вправо
+    else if (e.keyCode == 39 && snake.dx == 0) {
+      snake.dx = grid;
+      snake.dy = 0;
+    }
+//стрелка вниз
+    else if (e.keyCode == 40 && snake.dy == 0) {
+      snake.dy = grid;
+      snake.dx = 0;
+    }
+  });
+//всё время запускаем игру
+  requestAnimationFrame(loop);
