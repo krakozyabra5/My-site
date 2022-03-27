@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+ <head>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
     canvas {
       border: 1px solid black;
-      background: aqua;
+      background: #171819;;
       width: 400px;
       height: 400px;
+    }
+
+    .apple {
+      width: 16px
     }
   </style>
 </head>
 
 <body>
   <canvas width="400px" height="400px" class="game"></canvas>
+  <img src="https://cdn4.iconfinder.com/data/icons/fruits-79/48/04-apple-256.png" alt="яблоко" class="apple">
 
   <script>
+    let image = document.querySelector('.apple');
     let canvas = document.querySelector('.game');
     let context = canvas.getContext('2d');
     let grid = 16;
     let count = 0;
     let snake = {
-      x: 200,  //положение при старте
-      y: 350,
+      x: 192,  //положение при старте
+      y: 352,
       dx: 0,  //направление при старте
       dy: -grid,
       cells: [],
-      maxCells: 4 //длина змейки при старте
+      maxCells: 6 //длина змейки при старте
     };
     let apple = {
-      x: 320, //начальные координаты яблока
-      y: 320
+      x: 0, //начальные координаты яблока
+      y: 0
     };
+    apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+    apple.y = getRandomInt(1, 24) * grid;
     function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }  //генератор случайных чисел
@@ -54,76 +52,77 @@
       snake.x += snake.dx;  //двигаем змейку с нужной скоростью
       snake.y += snake.dy;
       if (snake.x < 0) {  //конец игры если змейка касается поля по горизонтали слева
-        snake.x = 200;
-        snake.y = 350;
+        snake.x = 192;
+        snake.y = 352;
         snake.cells = [];
-        snake.maxCells = 4;
+        snake.maxCells = 6;
         snake.dx = 0;
         snake.dy = -grid;
-        apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-        apple.y = getRandomInt(0, 25) * grid;  
+        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+        apple.y = getRandomInt(1, 24) * grid;  
       }
       if (snake.x > 390) {  //конец игры если змейка касается поля по горизонтали справа
-        snake.x = 200;
-        snake.y = 350;
+        snake.x = 192;
+        snake.y = 352;
         snake.cells = [];
-        snake.maxCells = 4;
+        snake.maxCells = 6;
         snake.dx = 0;
         snake.dy = -grid;
-        apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-        apple.y = getRandomInt(0, 25) * grid;  
+        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+        apple.y = getRandomInt(1, 24) * grid;  
       }
       if (snake.y < 0) {  //конец игры если змейка касается поля по вертикали сверху
-        snake.x = 200;
-        snake.y = 350;
+        snake.x = 192;
+        snake.y = 352;
         snake.cells = [];
-        snake.maxCells = 4;
+        snake.maxCells = 6;
         snake.dx = 0;
         snake.dy = -grid;
-        apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-        apple.y = getRandomInt(0, 25) * grid;
+        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+        apple.y = getRandomInt(1, 24) * grid;
       }
       if (snake.y > 390) {  //конец игры если змейка касается поля по вертикали снизу
-        snake.x = 200;
-        snake.y = 350;
+        snake.x = 192;
+        snake.y = 352;
         snake.cells = [];
-        snake.maxCells = 4;
+        snake.maxCells = 6;
         snake.dx = 0;
         snake.dy = -grid;
-        apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-        apple.y = getRandomInt(0, 25) * grid;
+        apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+        apple.y = getRandomInt(1, 24) * grid;
       }
 
       snake.cells.unshift({ x: snake.x, y: snake.y });  //добавляем клетку перед змейкой по координатам (поменяв x и y можно инвертировать управление относительно осей x и y)
       if (snake.cells.length > snake.maxCells) {
         snake.cells.pop();  //удаляем последний элемент из массива змейки (лишнюю клетку хвоста)
       }
-      context.fillStyle = 'red';  //рисуем яблоко (по коодинатам)
-      context.fillRect(apple.x, apple.y, grid - 2, grid - 2);
-      context.fillStyle = 'green';  //рисуем ВСЕ клетки змейки (по коодинатам)
+      context.fillStyle = '#177819';  //рисуем яблоко (по коодинатам)
+      context.drawImage(image, apple.x, apple.y, apple.x, apple.y, apple.x, apple.y, apple.x, apple.y);
+      context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
+      context.fillStyle = 'yellow';  //рисуем ВСЕ клетки змейки (по коодинатам)
       snake.cells.forEach(function (cell, index) {
         context.fillRect(cell.x, cell.y, grid - 0, grid - 0);
-        if (cell.x === apple.x && cell.y === apple.y) {  //если змейка добралась до яблока...
-          snake.maxCells++;  //увеличиваем длину змейки
-          apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-          apple.y = getRandomInt(0, 25) * grid;
+        if (cell.x == apple.x && cell.y == apple.y) {  //если змейка добралась до яблока...
+          snake.maxCells = snake.maxCells + 1;  //увеличиваем длину змейки
+          apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+          apple.y = getRandomInt(1, 24) * grid;
         }
         for (var i = index + 1; i < snake.cells.length; i++) {  //проверяем, не столкнулась ли змея сама с собой, сравнивая координаты всех её клеток
           if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {  //если такие клетки есть — начинаем игру заново
-            snake.x = 200;
-            snake.y = 350;
+            snake.x = 192;
+            snake.y = 352;
             snake.cells = [];
-            snake.maxCells = 4;
+            snake.maxCells = 6;
             snake.dx = 0;
             snake.dy = -grid;
-            apple.x = getRandomInt(0, 25) * grid;  //генерим яблоко
-            apple.y = getRandomInt(0, 25) * grid;
+            apple.x = getRandomInt(1, 24) * grid;  //генерим яблоко
+            apple.y = getRandomInt(1, 24) * grid;
           }
         }
       });
     }
     document.addEventListener('keydown', function (e) {  //регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
-      if (e.which === 37 && snake.dx === 0) {  //стрелка влево
+      if (e.keyCode == 37 & snake.dx == 0) {  //стрелка влево
         snake.dx = -grid;
         snake.dy = 0;
       }
