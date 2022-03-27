@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <style>
-    canvas {
-      border: 1px solid black;
-      background: #171819;;
-      width: 400px;
-      height: 400px;
-    }
-
-    .apple {
-      width: 16px
-    }
-  </style>
-</head>
-
-<body>
-  <canvas width="400px" height="400px" class="game"></canvas>
-  <img src="https://cdn4.iconfinder.com/data/icons/fruits-79/48/04-apple-256.png" alt="яблоко" class="apple">
-
-  <script>
     let image = document.querySelector('.apple');
     let canvas = document.querySelector('.game');
     let context = canvas.getContext('2d');
@@ -96,8 +74,8 @@
       if (snake.cells.length > snake.maxCells) {
         snake.cells.pop();  //удаляем последний элемент из массива змейки (лишнюю клетку хвоста)
       }
-      context.fillStyle = '#177819';  //рисуем яблоко (по коодинатам)
-      context.drawImage(image, apple.x, apple.y, apple.x, apple.y, apple.x, apple.y, apple.x, apple.y);
+      context.fillStyle = 'rgba(0, 0, 0, 0)';  //рисуем яблоко (по коодинатам)
+      context.drawImage(image, 0, 0, apple.x, apple.y, apple.x, apple.y, 16, 16);
       context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
       context.fillStyle = 'yellow';  //рисуем ВСЕ клетки змейки (по коодинатам)
       snake.cells.forEach(function (cell, index) {
@@ -126,15 +104,15 @@
         snake.dx = -grid;
         snake.dy = 0;
       }
-      else if (e.which === 38 && snake.dy === 0) {  //стрелка вверх
+      else if (e.keyCode == 38 && snake.dy == 0) {  //стрелка вверх
         snake.dy = -grid;
         snake.dx = 0;
       }
-      else if (e.which === 39 && snake.dx === 0) {  //стрелка вправо
+      else if (e.keyCode == 39 && snake.dx == 0) {  //стрелка вправо
         snake.dx = grid;
         snake.dy = 0;
       }
-      else if (e.which === 40 && snake.dy === 0) {  //стрелка вниз
+      else if (e.keyCode == 40 && snake.dy == 0) {  //стрелка вниз
         snake.dy = grid;
         snake.dx = 0;
       }
