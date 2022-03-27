@@ -31,7 +31,7 @@ body {
 .right {
   float: right;
   width: 335px;
-  height: 575px;
+  height: 565px;
   margin: 0px auto;
   background-color: #141414;
   position: relative;
@@ -272,34 +272,24 @@ h1 {
   transition: all 0.3s;
 }
 
-.game {
+.game_field {
   position: relative;
   height: 450px;
-  bottom: 10px;
+  bottom: 30px;
+  border-top: 10px solid #171819;
   border-left: 10px solid #171819;
   border-right: 10px solid #171819;
   border-bottom: 10px solid #171819;
-  box-shadow: 0px -10px 0px #171819;
 }
 
-.snake {
-  position: relative;
-  background-color: #FFFFFF;
-  display: block;
-  width: 10px;
-  height: 10px;
-  top: 250px;
-  left: 153px;
-}
-
+canvas {
+  border: 1px solid black;
+  background: #141414;;
+  width: 315px;
+  height: 450px;
+  
 .apple {
-  position: relative;
-  background-color: #FF0000;
-  display: block;
-  width: 10px;
-  height: 10px;
-  top: 80px;
-  left: 153px;
+  display: none;
 }
 
 /* Параметры анимации */
