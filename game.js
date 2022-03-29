@@ -151,3 +151,11 @@ document.addEventListener('keydown', function (e) {
 });
 //всё время запускаем игру
 requestAnimationFrame(loop);
+
+//отключаем прокрутку страницы стрелками
+document.onkeydown = function(e) {
+    let k = e.keyCode;
+    if(k >= 37 && k <= 40) {
+        return false;
+    }
+}
