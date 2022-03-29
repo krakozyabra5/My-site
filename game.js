@@ -32,15 +32,15 @@ function getRandomInt(min, max) {
 function loop() {  
   requestAnimationFrame(loop);
 //скорость обновления кадров
-if (++count < 4) {
+if (count++ < 3) {
   return;
 }
 count = 0;
 //очистка поля по координатам после столкновения с полем
 context.clearRect(0, 0, canvas.width, canvas.height);
 //двигаем змейку с нужной скоростью
-snake.x += snake.dx;
-snake.y += snake.dy;
+snake.x = snake.x + snake.dx;
+snake.y = snake.y + snake.dy;
 //конец игры если змейка касается поля по горизонтали слева
 if (snake.x < 0) {
 //сравниваем текущий счёт и максимальный
@@ -49,6 +49,9 @@ if (snake.x < 0) {
 //выводим новый максимальный счёт
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
+//обнуляем текущий счёт
+  let score = 0;
+//создаём новую змейку
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -67,6 +70,9 @@ if (snake.x > 288) {
 //выводим новый максимальный счёт
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
+//обнуляем текущий счёт
+  let score = 0;
+//создаём новую змейку
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -85,6 +91,9 @@ if (snake.y < 0) {
 //выводим новый максимальный счёт
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
+//обнуляем текущий счёт
+  let score = 0;
+//создаём новую змейку
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -103,6 +112,9 @@ if (snake.y > 432) {
 //выводим новый максимальный счёт
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
+//обнуляем текущий счёт
+  let score = 0;
+//создаём новую змейку
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -125,10 +137,10 @@ context.drawImage(image, 0, 0, 16, 16, apple.x, apple.y, 16, 16);
 context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
 //рисуем ВСЕ клетки змейки (по коодинатам)
 context.fillStyle = 'yellow';
-snake.cells.forEach(function (cell, index) {
+snake.cells.forEach(function (cell, maxCells) {
   context.fillRect(cell.x, cell.y, grid - 0, grid - 0);
 //если змейка добралась до яблока...
-  if (cell.x == apple.x && cell.y == apple.y) {
+  if (cell.x == apple.x & cell.y == apple.y) {
 //увеличиваем длину змейки
     snake.maxCells = snake.maxCells + 1;
 //прибавляем 1 к счёту и обновляем его
@@ -139,15 +151,18 @@ snake.cells.forEach(function (cell, index) {
     apple.y = getRandomInt(1, 27) * grid;
   }
 //проверяем, не столкнулась ли змейка сама с собой, сравнивая координаты всех её клеток
-  for (let i = index + 1; i < snake.cells.length; i++) {
+  for (let i = maxCells + 1; i < snake.cells.length; i++) {
 //если такие клетки есть — начинаем игру заново
-    if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+    if (cell.x == snake.cells[i].x & cell.y == snake.cells[i].y) {
 //сравниваем текущий счёт и максимальный
       if (max_score < score) {
         max_score = score;
 //выводим новый максимальный счёт
         document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
       }
+//обнуляем текущий счёт
+      let score = 0;
+//создаём новую змейку
       snake.x = 144;
       snake.y = 352;
       snake.cells = [];
@@ -169,17 +184,17 @@ document.addEventListener('keydown', function (e) {
     snake.dy = 0;
   }
 //стрелка вверх
-  else if (e.keyCode == 38 && snake.dy == 0) {
+  else if (e.keyCode == 38 & snake.dy == 0) {
     snake.dy = -grid;
     snake.dx = 0;
   }
 //стрелка вправо
-  else if (e.keyCode == 39 && snake.dx == 0) {
+  else if (e.keyCode == 39 & snake.dx == 0) {
     snake.dx = grid;
     snake.dy = 0;
   }
 //стрелка вниз
-  else if (e.keyCode == 40 && snake.dy == 0) {
+  else if (e.keyCode == 40 & snake.dy == 0) {
     snake.dy = grid;
     snake.dx = 0;
   }
