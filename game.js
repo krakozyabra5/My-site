@@ -2,6 +2,7 @@ let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let score = 0;
+let max_score = 0
 let grid = 16;
 let count = 0;
 let snake = {  
@@ -42,6 +43,12 @@ snake.x += snake.dx;
 snake.y += snake.dy;
 //конец игры если змейка касается поля по горизонтали слева
 if (snake.x < 0) {
+//сравниваем текущий счёт и максимальный
+  if (max_score < score) {
+    max_score = score;
+//выводим новый максимальный счёт
+    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+  }
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -54,6 +61,12 @@ if (snake.x < 0) {
 }
 //конец игры если змейка касается поля по горизонтали справа
 if (snake.x > 288) {
+//сравниваем текущий счёт и максимальный
+  if (max_score < score) {
+    max_score = score;
+//выводим новый максимальный счёт
+    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+  }
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -66,6 +79,12 @@ if (snake.x > 288) {
 }
 //конец игры если змейка касается поля по вертикали сверху
 if (snake.y < 0) {
+//сравниваем текущий счёт и максимальный
+  if (max_score < score) {
+    max_score = score;
+//выводим новый максимальный счёт
+    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+  }
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -78,6 +97,12 @@ if (snake.y < 0) {
 }
 //конец игры если змейка касается поля по вертикали снизу
 if (snake.y > 432) {
+//сравниваем текущий счёт и максимальный
+  if (max_score < score) {
+    max_score = score;
+//выводим новый максимальный счёт
+    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+  }
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -106,7 +131,7 @@ snake.cells.forEach(function (cell, index) {
   if (cell.x == apple.x && cell.y == apple.y) {
 //увеличиваем длину змейки
     snake.maxCells = snake.maxCells + 1;
-//прибавляем 1 к счёту и показываем текущий счёт
+//прибавляем 1 к счёту и обновляем его
     score = score + 1;
     document.querySelector('.score').textContent = 'Очки: ' + score;
 //генерим яблоко
@@ -117,6 +142,12 @@ snake.cells.forEach(function (cell, index) {
   for (let i = index + 1; i < snake.cells.length; i++) {
 //если такие клетки есть — начинаем игру заново
     if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+//сравниваем текущий счёт и максимальный
+      if (max_score < score) {
+        max_score = score;
+//выводим новый максимальный счёт
+        document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+      }
       snake.x = 144;
       snake.y = 352;
       snake.cells = [];
