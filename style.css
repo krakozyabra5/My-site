@@ -287,7 +287,8 @@ canvas {
   background: #141414;;
   width: 320px;
   height: 450px;
-  
+}
+
 .apple {
   display: none;
 }
