@@ -52,7 +52,7 @@ if (snake.x < 0) {
   apple.y = getRandomInt(1, 27) * grid;
 }
 //конец игры если змейка касается поля по горизонтали справа
-if (snake.x > 304) {
+if (snake.x > 288) {
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
@@ -76,7 +76,7 @@ if (snake.y < 0) {
   apple.y = getRandomInt(1, 27) * grid;
 }
 //конец игры если змейка касается поля по вертикали снизу
-if (snake.y > 448) {
+if (snake.y > 432) {
   snake.x = 144;
   snake.y = 352;
   snake.cells = [];
