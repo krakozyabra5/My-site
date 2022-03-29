@@ -247,7 +247,7 @@ h1 {
 .score {
   position: relative;
   left: 145px;
-  bottom: 69px;
+  bottom: 26px;
   width: max-content;
 }
 
@@ -255,13 +255,13 @@ h1 {
   position: relative;
   width: 20px;
   left: 223.5px;
-  bottom: 26.3px;
+  bottom: 65px;
 }
 
 .play_button {
   position: relative;
-  left: 290px;
-  bottom: 115px;
+  left: 260px;
+  bottom: 75px;
   width: 27px;
   height: 27px;
   background-color: #f5f6fa;
