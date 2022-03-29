@@ -274,19 +274,20 @@ h1 {
 
 .game_field {
   position: relative;
-  height: 450px;
+  width: 304px;
+  height: 448px;
   bottom: 30px;
   border-top: 10px solid #171819;
   border-left: 10px solid #171819;
-  border-right: 10px solid #171819;
-  border-bottom: 10px solid #171819;
+  border-right: 21px solid #171819;
+  border-bottom: 21px solid #171819;
 }
 
 canvas {
   border: 1px solid black;
   background: #141414;;
   width: 304px;
-  height: 450px;
+  height: 448px;
 }
 
 .apple {
