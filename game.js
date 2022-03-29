@@ -2,7 +2,7 @@ let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let score = 0;
-let max_score = 0
+let max_score = 0;
 let grid = 16;
 let count = 0;
 let snake = {  
@@ -50,7 +50,7 @@ if (snake.x < 0) {
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
 //обнуляем текущий счёт
-  let score = 0;
+  score = 0;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -71,7 +71,7 @@ if (snake.x > 288) {
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
 //обнуляем текущий счёт
-  let score = 0;
+  score = 0;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -92,7 +92,7 @@ if (snake.y < 0) {
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
 //обнуляем текущий счёт
-  let score = 0;
+  score = 0;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -113,7 +113,7 @@ if (snake.y > 432) {
     document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
   }
 //обнуляем текущий счёт
-  let score = 0;
+  score = 0;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -161,7 +161,7 @@ snake.cells.forEach(function (cell, maxCells) {
         document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
       }
 //обнуляем текущий счёт
-      let score = 0;
+      score = 0;
 //создаём новую змейку
       snake.x = 144;
       snake.y = 352;
