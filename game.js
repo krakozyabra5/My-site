@@ -108,7 +108,7 @@ snake.cells.forEach(function (cell, index) {
     snake.maxCells = snake.maxCells + 1;
 //прибавляем 1 к счёту и показываем новое значение на экране
     let score = score + 1;
-    document.querySelector('.score').textContent = 'Очки: ' + x;
+    document.querySelector('.score').textContent = 'Очки: ' + score;
 //генерим яблоко
     apple.x = getRandomInt(1, 18) * grid; 
     apple.y = getRandomInt(1, 27) * grid;
