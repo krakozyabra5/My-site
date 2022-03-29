@@ -5,6 +5,7 @@ let score = 0;
 let max_score = 0;
 let grid = 16;
 let count = 0;
+let max_count = 3;
 let snake = {  
 //положение при старте
   x: 144,
@@ -32,7 +33,8 @@ function getRandomInt(min, max) {
 function loop() {  
   requestAnimationFrame(loop);
 //скорость обновления кадров
-if (count++ < 3) {
+if (count < max_count) {
+  count = count + 1;
   return;
 }
 count = 0;
