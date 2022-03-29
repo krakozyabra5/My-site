@@ -1,6 +1,7 @@
 let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
+let score = 0;
 let grid = 16;
 let count = 0;
 let snake = {  
@@ -105,6 +106,9 @@ snake.cells.forEach(function (cell, index) {
   if (cell.x == apple.x && cell.y == apple.y) {
 //увеличиваем длину змейки
     snake.maxCells = snake.maxCells + 1;
+//прибавляем 1 к счёту и показываем новое значение на экране
+    let score = score + 1;
+    document.querySelector('.score').textContent = 'Очки: ' + x;
 //генерим яблоко
     apple.x = getRandomInt(1, 18) * grid; 
     apple.y = getRandomInt(1, 27) * grid;
