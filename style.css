@@ -244,24 +244,28 @@ h1 {
   line-height: 25px;
 }
 
+.game_menu div {
+  position: absolute;
+  left: 130px;
+  height: 0px;
+}
+
 .score {
   position: relative;
-  left: 145px;
-  bottom: 26px;
-  width: max-content;
+  bottom: 44px;
 }
 
 .star {
   position: relative;
+  float: right;
   width: 20px;
-  left: 223.5px;
-  bottom: 65px;
+  bottom: 82px;
 }
 
 .play_button {
   position: relative;
   left: 285px;
-  bottom: 95px;
+  bottom: 35px;
   width: 27px;
   height: 27px;
   background-color: #f5f6fa;
