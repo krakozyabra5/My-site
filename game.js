@@ -153,10 +153,9 @@ document.addEventListener('keydown', function (e) {
 requestAnimationFrame(loop);
 
 //отключаем прокрутку страницы стрелками
-document.onkeydown = function(e) {
-    let k = e.keyCode;
-    if(k >= 37 && k <= 40) {
-        return false;
-    }
-}
+document.addEventListener("keydown", function(e) {
+  if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+    e.preventDefault();
+  }
+}, false);
 
