@@ -5,7 +5,7 @@ let grid = 16;
 let count = 0;
 let snake = {  
 //положение при старте
-  x: 192,
+  x: 144,
   y: 352,
 //направление движения при старте
   dx: 0,
@@ -20,8 +20,8 @@ let apple = {
    y: 0,  
 };
 //генерим яблоко
-apple.x = getRandomInt(1, 24) * grid;
-apple.y = getRandomInt(1, 24) * grid;
+apple.x = getRandomInt(1, 18) * grid;
+apple.y = getRandomInt(1, 27) * grid;
 //генератор случайных чисел
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -41,51 +41,51 @@ snake.x += snake.dx;
 snake.y += snake.dy;
 //конец игры если змейка касается поля по горизонтали слева
 if (snake.x < 0) {
-  snake.x = 192;
+  snake.x = 144;
   snake.y = 352;
   snake.cells = [];
   snake.maxCells = 6;
   snake.dx = 0;
   snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 24) * grid;
-  apple.y = getRandomInt(1, 24) * grid;
+  apple.x = getRandomInt(1, 18) * grid;
+  apple.y = getRandomInt(1, 27) * grid;
 }
 //конец игры если змейка касается поля по горизонтали справа
-if (snake.x > 390) {
-  snake.x = 192;
+if (snake.x > 304) {
+  snake.x = 144;
   snake.y = 352;
   snake.cells = [];
   snake.maxCells = 6;
   snake.dx = 0;
   snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 24) * grid;
-  apple.y = getRandomInt(1, 24) * grid;
+  apple.x = getRandomInt(1, 18) * grid;
+  apple.y = getRandomInt(1, 27) * grid;
 }
 //конец игры если змейка касается поля по вертикали сверху
 if (snake.y < 0) {
-  snake.x = 192;
+  snake.x = 144;
   snake.y = 352;
   snake.cells = [];
   snake.maxCells = 6;
   snake.dx = 0;
   snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 24) * grid;
-  apple.y = getRandomInt(1, 24) * grid;
+  apple.x = getRandomInt(1, 18) * grid;
+  apple.y = getRandomInt(1, 27) * grid;
 }
 //конец игры если змейка касается поля по вертикали снизу
-if (snake.y > 390) {
-  snake.x = 192;
+if (snake.y > 448) {
+  snake.x = 144;
   snake.y = 352;
   snake.cells = [];
   snake.maxCells = 6;
   snake.dx = 0;
   snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 24) * grid;
-  apple.y = getRandomInt(1, 24) * grid;
+  apple.x = getRandomInt(1, 18) * grid;
+  apple.y = getRandomInt(1, 27) * grid;
 }
 //добавляем клетку перед змейкой по координатам (поменяв x и y можно инвертировать управление относительно осей x и y)
 snake.cells.unshift({ x: snake.x, y: snake.y });
@@ -106,22 +106,22 @@ snake.cells.forEach(function (cell, index) {
 //увеличиваем длину змейки
     snake.maxCells = snake.maxCells + 1;
 //генерим яблоко
-    apple.x = getRandomInt(1, 24) * grid; 
-    apple.y = getRandomInt(1, 24) * grid;
+    apple.x = getRandomInt(1, 18) * grid; 
+    apple.y = getRandomInt(1, 27) * grid;
   }
 //проверяем, не столкнулась ли змейка сама с собой, сравнивая координаты всех её клеток
   for (let i = index + 1; i < snake.cells.length; i++) {
 //если такие клетки есть — начинаем игру заново
     if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-      snake.x = 192;
+      snake.x = 144;
       snake.y = 352;
       snake.cells = [];
       snake.maxCells = 6;
       snake.dx = 0;
       snake.dy = -grid;
 //генерим яблоко
-      apple.x = getRandomInt(1, 24) * grid;
-      apple.y = getRandomInt(1, 24) * grid;
+      apple.x = getRandomInt(1, 18) * grid;
+      apple.y = getRandomInt(1, 27) * grid;
     }
   }
 });
