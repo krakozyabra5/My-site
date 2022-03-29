@@ -238,17 +238,10 @@ h1 {
 
 .max_score {
   position: relative;
-  width: 240px;
+  width: 100px;
   left: 10px;
   top: 15px;
   line-height: 25px;
-}
-
-.star {
-  position: relative;
-  width: 20px;
-  left: 235px;
-  bottom: 26px;
 }
 
 .score {
@@ -256,6 +249,13 @@ h1 {
   left: 145px;
   bottom: 69px;
   width: 220px;
+}
+
+.star {
+  position: relative;
+  width: 20px;
+  left: 235px;
+  bottom: 26px;
 }
 
 .play_button {
