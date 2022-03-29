@@ -51,6 +51,7 @@ if (snake.x < 0) {
   }
 //обнуляем текущий счёт
   score = 0;
+  document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -72,6 +73,7 @@ if (snake.x > 288) {
   }
 //обнуляем текущий счёт
   score = 0;
+  document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -93,6 +95,7 @@ if (snake.y < 0) {
   }
 //обнуляем текущий счёт
   score = 0;
+  document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -114,6 +117,7 @@ if (snake.y > 432) {
   }
 //обнуляем текущий счёт
   score = 0;
+  document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
   snake.x = 144;
   snake.y = 352;
@@ -162,6 +166,7 @@ snake.cells.forEach(function (cell, maxCells) {
       }
 //обнуляем текущий счёт
       score = 0;
+      document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
       snake.x = 144;
       snake.y = 352;
