@@ -106,9 +106,8 @@ snake.cells.forEach(function (cell, index) {
   if (cell.x == apple.x && cell.y == apple.y) {
 //увеличиваем длину змейки
     snake.maxCells = snake.maxCells + 1;
-//прибавляем 1 к счёту и показываем новое значение на экране
-    let score = score + 1;
-    document.querySelector('.score').textContent = 'Очки: ' + score;
+//прибавляем 1 к счёту
+    score = score + 1;
 //генерим яблоко
     apple.x = getRandomInt(1, 18) * grid; 
     apple.y = getRandomInt(1, 27) * grid;
@@ -153,6 +152,8 @@ document.addEventListener('keydown', function (e) {
     snake.dx = 0;
   }
 });
+//показываем текущий счёт
+document.querySelector('.score').textContent = 'Очки: ' + score;
 //всё время запускаем игру
 requestAnimationFrame(loop);
 
