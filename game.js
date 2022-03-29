@@ -95,7 +95,7 @@ if (snake.cells.length > snake.maxCells) {
 }
 //рисуем яблоко (по коодинатам)
 context.fillStyle = 'rgba(0, 0, 0, 0)';
-context.drawImage(image, 0, 0, apple.x, apple.y, apple.x, apple.y, 16, 16);
+context.drawImage(image, 0, 0, apple.x, apple.y, apple.x, apple.y, 1, 1);
 context.fillRect(apple.x, apple.y, grid - 0, grid - 0);
 //рисуем ВСЕ клетки змейки (по коодинатам)
 context.fillStyle = 'yellow';
