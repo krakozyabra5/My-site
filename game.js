@@ -35,7 +35,7 @@ function getRandomInt(min, max) {
 function loop() {  
   requestAnimationFrame(loop);
 //скорость обновления кадров
-  if (count < max_count && start === 1) {
+  if (count < max_count) & (start = 1) {
     count = count + 1;
     return;
   }
