@@ -35,10 +35,11 @@ function getRandomInt(min, max) {
 function loop() {  
   requestAnimationFrame(loop);
 //скорость обновления кадров
-  if (count < max_count && start == 1) {
+  if (count < max_count && start === 1) {
     count = count + 1;
     return;
   }
+  start = 0;
   count = 0;
 //очистка поля по координатам после столкновения с полем
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -184,7 +185,6 @@ function loop() {
       }
     }
   });
-  start = start - 1
 }
 //регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
 document.addEventListener('keydown', function (e) {
