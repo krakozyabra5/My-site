@@ -232,9 +232,13 @@ start_game.onclick = function () {
   }
 }
 
+function () {
   if (start = 0) {
     return ();
   }
+} 
+
+
 
 
 
