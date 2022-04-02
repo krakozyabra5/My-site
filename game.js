@@ -36,12 +36,10 @@ function loop() {
   requestAnimationFrame(loop);
 //скорость обновления кадров
   if (count < max_count) {
-    if (start = 1) {
-      max_count = 10000000;
-    }
+    count = count + 1;
     return;
   }
-  start = 0;
+  max_count = max_count = 1000000;
   count = 0;
 //очистка поля по координатам после столкновения с полем
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -224,13 +222,13 @@ document.addEventListener("keydown", function(e) {
 start_game.onclick = function () {
   if (start = 0) {
     start = start + 1;
-   /* if (max_count > 10000000) {
-      max_count = max_count - 10000000;
+    if (max_count > 1000000) {
+      max_count = max_count - 1000000;
     }*/
   }
 //после второго нажатия на кнопку
   else {
-  //  max_count = max_count + 10000000;
+    max_count = max_count + 1000000;
     start = start - 1;
   }
 }
