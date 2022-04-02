@@ -232,7 +232,7 @@ start_game.onclick = function () {
   }
 }
 
-function () {
+function game() {
   if (start = 0) {
     return ();
   }
