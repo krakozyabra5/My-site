@@ -2,6 +2,7 @@ let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let start_game = document.querySelector('.play_button');
+let start = 0;
 let score = 0;
 let max_score = 0;
 let grid = 16;
@@ -30,112 +31,110 @@ apple.y = getRandomInt(1, 27) * grid;
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-//Начало игры после нажатия на кнопку
-start_game.onclick = function () {
 //игровой цикл
-function loop() {  
-  requestAnimationFrame(loop);
+  function loop() {  
+    requestAnimationFrame(loop);
 //скорость обновления кадров
-if (count < max_count) {
-  count = count + 1;
-  return;
-}
-count = 0;
+  if (count < max_count) {
+    count = count + 1;
+    return;
+  }
+  count = 0;
 //очистка поля по координатам после столкновения с полем
-context.clearRect(0, 0, canvas.width, canvas.height);
+  context.clearRect(0, 0, canvas.width, canvas.height);
 //двигаем змейку с нужной скоростью
-snake.x = snake.x + snake.dx;
-snake.y = snake.y + snake.dy;
+  snake.x = snake.x + snake.dx;
+  snake.y = snake.y + snake.dy;
 //конец игры если змейка касается поля по горизонтали слева
-if (snake.x < 0) {
+  if (snake.x < 0) {
 //сравниваем текущий счёт и максимальный
-  if (max_score < score) {
-    max_score = score;
+    if (max_score < score) {
+      max_score = score;
 //выводим новый максимальный счёт
-    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
-  }
+      document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+    }
 //обнуляем текущий счёт
-  score = 0;
-  document.querySelector('.score').textContent = 'Очки: ' + score;
+    score = 0;
+    document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
-  snake.x = 144;
-  snake.y = 352;
-  snake.cells = [];
-  snake.maxCells = 6;
-  snake.dx = 0;
-  snake.dy = -grid;
+    snake.x = 144;
+    snake.y = 352;
+    snake.cells = [];
+    snake.maxCells = 6;
+    snake.dx = 0;
+    snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 18) * grid;
-  apple.y = getRandomInt(1, 27) * grid;
-}
+    apple.x = getRandomInt(1, 18) * grid;
+    apple.y = getRandomInt(1, 27) * grid;
+  }
 //конец игры если змейка касается поля по горизонтали справа
-if (snake.x > 288) {
+  if (snake.x > 288) {
 //сравниваем текущий счёт и максимальный
-  if (max_score < score) {
-    max_score = score;
+    if (max_score < score) {
+      max_score = score;
 //выводим новый максимальный счёт
-    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
-  }
+      document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+    }
 //обнуляем текущий счёт
-  score = 0;
-  document.querySelector('.score').textContent = 'Очки: ' + score;
+    score = 0;
+    document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
-  snake.x = 144;
-  snake.y = 352;
-  snake.cells = [];
-  snake.maxCells = 6;
-  snake.dx = 0;
-  snake.dy = -grid;
+    snake.x = 144;
+    snake.y = 352;
+    snake.cells = [];
+    snake.maxCells = 6;
+    snake.dx = 0;
+    snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 18) * grid;
-  apple.y = getRandomInt(1, 27) * grid;
-}
+    apple.x = getRandomInt(1, 18) * grid;
+    apple.y = getRandomInt(1, 27) * grid;
+  }
 //конец игры если змейка касается поля по вертикали сверху
-if (snake.y < 0) {
+  if (snake.y < 0) {
 //сравниваем текущий счёт и максимальный
-  if (max_score < score) {
-    max_score = score;
+    if (max_score < score) {
+      max_score = score;
 //выводим новый максимальный счёт
-    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
-  }
+      document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+    }
 //обнуляем текущий счёт
-  score = 0;
-  document.querySelector('.score').textContent = 'Очки: ' + score;
+    score = 0;
+    document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
-  snake.x = 144;
-  snake.y = 352;
-  snake.cells = [];
-  snake.maxCells = 6;
-  snake.dx = 0;
-  snake.dy = -grid;
+    snake.x = 144;
+    snake.y = 352;
+    snake.cells = [];
+    snake.maxCells = 6;
+    snake.dx = 0;
+    snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 18) * grid;
-  apple.y = getRandomInt(1, 27) * grid;
-}
+    apple.x = getRandomInt(1, 18) * grid;
+    apple.y = getRandomInt(1, 27) * grid;
+  }
 //конец игры если змейка касается поля по вертикали снизу
-if (snake.y > 432) {
+  if (snake.y > 432) {
 //сравниваем текущий счёт и максимальный
-  if (max_score < score) {
-    max_score = score;
+    if (max_score < score) {
+      max_score = score;
 //выводим новый максимальный счёт
-    document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
-  }
+      document.querySelector('.max_score').textContent = 'Рекорд: ' + max_score;
+    }
 //обнуляем текущий счёт
-  score = 0;
-  document.querySelector('.score').textContent = 'Очки: ' + score;
+    score = 0;
+    document.querySelector('.score').textContent = 'Очки: ' + score;
 //создаём новую змейку
-  snake.x = 144;
-  snake.y = 352;
-  snake.cells = [];
-  snake.maxCells = 6;
-  snake.dx = 0;
-  snake.dy = -grid;
+    snake.x = 144;
+    snake.y = 352;
+    snake.cells = [];
+    snake.maxCells = 6;
+    snake.dx = 0;
+    snake.dy = -grid;
 //генерим яблоко
-  apple.x = getRandomInt(1, 18) * grid;
-  apple.y = getRandomInt(1, 27) * grid;
-}
+    apple.x = getRandomInt(1, 18) * grid;
+    apple.y = getRandomInt(1, 27) * grid;
+  }
 //добавляем клетку перед змейкой по координатам (поменяв x и y можно инвертировать управление относительно осей x и y)
-snake.cells.unshift({ x: snake.x, y: snake.y });
+  snake.cells.unshift({ x: snake.x, y: snake.y });
 if (snake.cells.length > snake.maxCells) {
 //удаляем последний элемент из массива змейки (лишнюю клетку хвоста)
   snake.cells.pop();
@@ -211,11 +210,35 @@ document.addEventListener('keydown', function (e) {
 });
 //всё время обновляем поле, запрашивая выполнение функции
 requestAnimationFrame(loop);
-
 //отключаем прокрутку страницы стрелками
 document.addEventListener("keydown", function(e) {
   if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
     e.preventDefault();
   }
 }, false);
+
+//после нажатия на кнопку
+start_game.onclick = function () {
+  if (start = 0) {
+    start = start + 1;
+   /* if (max_count > 10000000) {
+      max_count = max_count - 10000000;
+    }*/
+  }
+//после второго нажатия на кнопку
+  else {
+  //  max_count = max_count + 10000000;
+    start = start - 1;
+  }
 }
+
+  if (start > 0) {
+
+  }
+  else {
+    return;
+  }
+
+
+
+
