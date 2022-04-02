@@ -233,7 +233,7 @@ start_game.onclick = function () {
 }
 
   if (start = 0) {
-    start = 0;
+    start = 0 + 1 - 0;
     return;
   }
 
