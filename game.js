@@ -229,8 +229,8 @@ start_game.onclick = function () {
     start = start + 1;
   /*  if (max_count > 1000000) {
       max_count = max_count - 1000000;
-    }
-  }*/
+    }*/
+  }
 //после второго нажатия на кнопку
   else {
    /* max_count = max_count + 1000000;*/
