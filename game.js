@@ -1,6 +1,7 @@
 let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
+let start_game = document.querySelector('.play_button');
 let score = 0;
 let max_score = 0;
 let grid = 16;
@@ -29,6 +30,8 @@ apple.y = getRandomInt(1, 27) * grid;
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+//Начало игры после нажатия на кнопку
+start_game.onclick = function () {
 //игровой цикл
 function loop() {  
   requestAnimationFrame(loop);
@@ -206,7 +209,7 @@ document.addEventListener('keydown', function (e) {
     snake.dx = 0;
   }
 });
-//всё время запускаем игру
+//всё время обновляем поле, запрашивая выполнение функции
 requestAnimationFrame(loop);
 
 //отключаем прокрутку страницы стрелками
@@ -215,4 +218,4 @@ document.addEventListener("keydown", function(e) {
     e.preventDefault();
   }
 }, false);
-
+}
