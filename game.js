@@ -37,7 +37,7 @@ function loop() {
 //скорость обновления кадров
   if (count < max_count) {
     if (start = 1) {
-      count = count + 1;
+      max_count = 10000000;
     }
     return;
   }
