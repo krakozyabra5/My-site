@@ -2,7 +2,7 @@ let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let start_game = document.querySelector('.play_button');
-let start = 0;
+let start = 1;
 let score = 0;
 let max_score = 0;
 let grid = 16;
@@ -35,7 +35,7 @@ function getRandomInt(min, max) {
 function loop() {  
   requestAnimationFrame(loop);
 //скорость обновления кадров
-  if (count < max_count) {
+  if (count < max_count & start = 1) {
     count = count + 1;
     return;
   }
@@ -184,6 +184,7 @@ function loop() {
       }
     }
   });
+  start = start - 1
 }
 //регистрируем нажатие на стрелки (вторая часть условия проверки мешает двигаться "в себя")
 document.addEventListener('keydown', function (e) {
@@ -231,13 +232,6 @@ start_game.onclick = function () {
     start = start - 1;
   }
 }
-
-function game() {
-  if (start = 0) {
-    function game()
-  }
-} 
-
 
 
 
