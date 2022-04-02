@@ -234,7 +234,7 @@ start_game.onclick = function () {
 
 function game() {
   if (start = 0) {
-    return ();
+    return;
   }
 } 
 
