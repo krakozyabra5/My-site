@@ -2,7 +2,7 @@ let image = document.querySelector('.apple');
 let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let start_game = document.querySelector('.play_button');
-let start = 1;
+let start = 0;
 let score = 0;
 let max_score = 0;
 let grid = 16;
@@ -219,23 +219,17 @@ document.addEventListener("keydown", function(e) {
   }
 }, false);
 
-start = 0;
-
-//после нажатия на кнопку
 start_game.onclick = function () {
-  if (start = 0) {
-    start = 1;
-  /*  if (max_count > 1000000) {
-      max_count = max_count - 1000000;
-    }*/
-  }
-//после второго нажатия на кнопку
-  else {
-   /* max_count = max_count + 1000000;*/
-    start = 0;
-  }
+if (start == 0) {
+start = 1;
+requestAnimationFrame(loop);
 }
-
+else {
+start = 0;
+}
+}
+     
+      
 
 
 
