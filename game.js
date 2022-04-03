@@ -210,7 +210,7 @@ document.addEventListener('keydown', function (e) {
     snake.dx = 0;
   }
 });
-//всё время обновляем поле, запрашивая выполнение функции
+//запрашиваем выполнение функции
 requestAnimationFrame(loop);
 //отключаем прокрутку страницы стрелками
 document.addEventListener("keydown", function(e) {
@@ -218,7 +218,7 @@ document.addEventListener("keydown", function(e) {
     e.preventDefault();
   }
 }, false);
-
+//остановка и начало игры при нажатии на кнопку
 start_game.onclick = function () {
   if (start == 0) {
     start = 1;
@@ -228,4 +228,4 @@ start_game.onclick = function () {
     start = 0;
   }
 }
-     
+
