@@ -24,13 +24,13 @@ let apple = {
    x: 0,
    y: 0,  
 };
-//генерим яблоко
-apple.x = getRandomInt(1, 18) * grid;
-apple.y = getRandomInt(1, 27) * grid;
 //генератор случайных чисел
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+//генерим яблоко
+apple.x = getRandomInt(1, 18) * grid;
+apple.y = getRandomInt(1, 27) * grid;
 //игровой цикл
 function loop() {
   if (start == 1) {
