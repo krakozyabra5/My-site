@@ -220,17 +220,12 @@ document.addEventListener("keydown", function(e) {
 }, false);
 
 start_game.onclick = function () {
-if (start == 0) {
-start = 1;
-requestAnimationFrame(loop);
-}
-else {
-start = 0;
-}
+  if (start == 0) {
+    start = 1;
+    requestAnimationFrame(loop);
+  }
+  else {
+    start = 0;
+  }
 }
      
-      
-
-
-
-
