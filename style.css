@@ -379,10 +379,10 @@ canvas {
 
 /* Протативный дизайн */
 
-/*@media (max-width: 1160px) {*/
+@media (max-width: 1160px) {
 
   /* дизайн страницы для телефонов */
-/*
+
   .page {
     width: auto;
     margin: 0px auto;
@@ -401,9 +401,9 @@ canvas {
   .right {
     display: none;
   }
-*/
+
 /* дизайн меню для телефонов */
-  /*
+  
   .menu {
     display: none;
   }
@@ -464,6 +464,6 @@ canvas {
     outline:none;
   }
 }
-*/
+
 
  
