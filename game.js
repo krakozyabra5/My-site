@@ -33,7 +33,7 @@ function getRandomInt(min, max) {
 }
 //игровой цикл
 function loop() {
-  if (start = 1) {
+  if (start == 1) {
     requestAnimationFrame(loop);
 //скорость обновления кадров
     if (count < max_count) {
@@ -219,14 +219,12 @@ document.addEventListener("keydown", function(e) {
   }
 }, false);
 
-(function () {
-  start = start - 1;
-});
+start = 0;
 
 //после нажатия на кнопку
 start_game.onclick = function () {
   if (start = 0) {
-    start = start + 1;
+    start = 1;
   /*  if (max_count > 1000000) {
       max_count = max_count - 1000000;
     }*/
@@ -234,7 +232,7 @@ start_game.onclick = function () {
 //после второго нажатия на кнопку
   else {
    /* max_count = max_count + 1000000;*/
-    start = start - 1;
+    start = 0;
   }
 }
 
