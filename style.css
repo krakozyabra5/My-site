@@ -135,13 +135,13 @@ background-size: 20px;
 }
 
 .menu_bar li:first-child {
-  border-left: 10px solid;
+  border-left: 17px solid;
   border-radius: 20px 0px 0px 20px;
   border-color: #14181F;
 }
 
 .menu_bar li:last-child {
-  border-right: 10px solid;
+  border-right: 17px solid;
   border-radius: 0px 20px 20px 0px;
   border-color: #14181F;
 }
