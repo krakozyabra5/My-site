@@ -57,19 +57,19 @@ body {
   position: absolute;
   width: 30px;
   top: 8px;
-  left: 10px;
+  left: 85px;
 }
 
 .menu_image {
   position: absolute;
-  top: 18px;
-  left: 63px;
+  top: 19.5px;
+  left: 135px;
 }
 
 .search-block {
   position: absolute;
   width: 170px;
-  margin-top: 6px;
+  margin-top: 10px;
   right: 15px;
 }
 
@@ -77,11 +77,12 @@ body {
   padding: 0 42px 0 15px;
   border-radius: 10px 20px 20px 10px;
   box-shadow: none;
-  border: 1px solid #dbdfec;
+  border: 1px solid #686868;
   height: 32px;
   line-height: 39px;
   width: 110px;
-  background: #f5f5f5;
+  background: #1F2021;
+  color: #FFFFFF;
 }
 
 .search_image {
@@ -100,9 +101,9 @@ background-size: 20px;
   right: 0px;
   width: 40px;
   height: 34px;
-  background-color: #f5f6fa;
+  background-color: #303030;
   padding: 0;
-  border: 1px solid #dbdfec;
+  border: 1px solid #686868;
   line-height: 39px;
   border-radius: 0 12.5px 12.5px 0;
   cursor: pointer;
@@ -135,13 +136,13 @@ background-size: 20px;
 }
 
 .menu_bar li:first-child {
-  border-left: 17px solid;
+  border-left: 23px solid;
   border-radius: 20px 0px 0px 20px;
   border-color: #14181F;
 }
 
 .menu_bar li:last-child {
-  border-right: 17px solid;
+  border-right: 23px solid;
   border-radius: 0px 20px 20px 0px;
   border-color: #14181F;
 }
