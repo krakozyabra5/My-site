@@ -55,15 +55,14 @@ body {
 .menu {
   display: inline-flex;
   position: absolute;
-  width: 30px;
   top: 8px;
-  left: 85px;
+  left: 15px;
 }
 
 .menu_image {
   position: absolute;
-  top: 19.5px;
-  left: 135px;
+  top: 20px;
+  left: 63px;
 }
 
 .search-block {
