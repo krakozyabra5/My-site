@@ -218,7 +218,7 @@ h1 {
 
 .next {
   position: relative;
-  width: 80px;
+  width: 36px;
   height: 25px;
   float: right;
   background: url("Next.png");
@@ -226,6 +226,11 @@ h1 {
   bottom: 60px;
   border: none;
   cursor: pointer;
+  transition: 0.25s;
+}
+
+.next:hover {
+  transform: scaleX(1.12);
 }
 
 .my_hobbies {
