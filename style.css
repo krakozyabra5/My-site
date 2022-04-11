@@ -6,7 +6,7 @@ body {
 }
 
 .page {
-  width: 1200px;
+  width: 1400px;
   margin: 0px auto;
   margin-top: 130px;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .center {
-  width: 530px;
+  width: 730px;
   margin: 0px auto;
   padding-top: 1px;
   background: #171819;
@@ -313,7 +313,7 @@ h1 {
 }
 
 canvas {
-  border: 1px solid black;
+  border: 1px solid #f5f6fa;
   background: #141414;;
   width: 304px;
   height: 448px;
