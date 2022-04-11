@@ -59,10 +59,26 @@ body {
   left: 15px;
 }
 
+.menu img {
+  transition: 0.4s;
+}
+
+.menu img:hover {
+  transform: scale(1.08);
+}
+
 .menu_image {
   position: absolute;
   top: 20px;
-  left: 63px;
+  left: 67px;
+}
+
+.menu_image img {
+  transition: 0.4s;
+}
+
+.menu_image img:hover {
+  transform: scale(1.05);
 }
 
 .search-block {
