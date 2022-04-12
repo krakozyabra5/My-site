@@ -7,10 +7,12 @@ arrow_next.onclick = function () {
   div_next.classList.toggle('hidden')
   div_previous.classList.toggle('hidden')
   window.scroll(top);
+  behavior: 'smooth';
 }
 
 arrow_previous.onclick = function () {
   div_next.classList.toggle('hidden')
   div_previous.classList.toggle('hidden')
   window.scroll(top);
+  behavior: 'smooth';
 }
