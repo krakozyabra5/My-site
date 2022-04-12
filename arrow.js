@@ -6,9 +6,11 @@ let div_previous = document.querySelector('.div_previous');
 arrow_next.onclick = function () {
   div_next.classList.toggle('hidden')
   div_previous.classList.toggle('hidden')
+  window.scroll(top);
 }
 
 arrow_previous.onclick = function () {
   div_next.classList.toggle('hidden')
   div_previous.classList.toggle('hidden')
+  window.scroll(top);
 }
