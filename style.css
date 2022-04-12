@@ -201,6 +201,12 @@ h1 {
   margin-right: 28px;
 }
 
+.center img {
+  width: 560px;
+  position: relative;
+  left: 30px;
+}
+
 .center h3 {
   position: relative;
   left: 20px;
