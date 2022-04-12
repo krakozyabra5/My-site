@@ -208,7 +208,7 @@ h1 {
 }
 
 .center div p:last-of-type {
-  padding-bottom: 35px;
+  padding-bottom: 55px;
 }
 
 .industry_advantages {
@@ -231,14 +231,32 @@ h1 {
   float: right;
   background: url("Next.png");
   right: 30px;
-  bottom: 60px;
+  bottom: 65px;
   border: none;
   cursor: pointer;
   transition: 0.25s;
 }
 
-.next:hover {
+.arrow_next:hover {
   transform: scaleX(1.12);
+}
+
+.arrow_previous {
+  position: relative;
+  width: 36px;
+  height: 25px;
+  float: left;
+  background: url("Next.png");
+  left: 18px;
+  bottom: 57px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+  transform: rotateY(180deg);
+}
+
+.arrow_previous {
+  transform: rotateY(180deg) scaleX(1.12);
 }
 
 .my_hobbies {
