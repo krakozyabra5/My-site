@@ -218,14 +218,20 @@ h1 {
 
 .div_next {
   display: block;
+  width: 630px;
+  transition: 0.35s;
 }
 
 .div_previous {
   display: block;
+  width: 630px;
+  transition: 0.35s;
 }
 
 .hidden {
   display: none;
+  position: absolute;
+  transform: scaleY(0.0);
 }
 
 .arrow_next {
