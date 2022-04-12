@@ -221,6 +221,10 @@ h1 {
 }
 
 .div_previous {
+  display: block;
+}
+
+.hidden {
   display: none;
 }
 
