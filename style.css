@@ -264,7 +264,7 @@ h1 {
   transform: rotateY(180deg);
 }
 
-.arrow_previous {
+.arrow_previous:hover {
   transform: rotateY(180deg) scaleX(1.12);
 }
 
