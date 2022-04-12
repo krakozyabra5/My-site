@@ -202,9 +202,11 @@ h1 {
 }
 
 .center img {
-  width: 560px;
   position: relative;
+  width: 560px;
   left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .center h3 {
