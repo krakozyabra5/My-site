@@ -216,7 +216,15 @@ h1 {
   font-size: 17.5px;
 }
 
-.next {
+.div_next {
+  display: block;
+}
+
+.div_previous {
+  display: none;
+}
+
+.arrow_next {
   position: relative;
   width: 36px;
   height: 25px;
