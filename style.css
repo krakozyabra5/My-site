@@ -229,7 +229,6 @@ h1 {
 }
 
 .hidden {
-  display: none;
   position: absolute;
   transform: scaleY(0.0);
 }
