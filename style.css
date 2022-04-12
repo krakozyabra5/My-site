@@ -229,8 +229,8 @@ h1 {
 }
 
 .hidden {
-  position: absolute;
-  transform: scaleY(0.0);
+  transform: translateY(0px);
+  display: none;
 }
 
 .arrow_next {
