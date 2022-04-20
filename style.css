@@ -383,8 +383,8 @@ h1 {
   bottom: 32px;
   width: 27px;
   height: 27px;
-  background-color: #f5f6fa;
-  border: 1px solid #dbdfec;
+  background-color: rgb(0,0,0,0);
+  border: none;
   line-height: 39px;
   border-radius: 100%;
   cursor: pointer;
