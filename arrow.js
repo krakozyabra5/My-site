@@ -7,7 +7,7 @@ arrow_next.onclick = function () {
   div_next.classList.toggle('hidden')
   div_previous.classList.toggle('hidden')
   window.scrollBy({
-    top: document.documentElement.clientHeight,
+    top: -document.documentElement.clientHeight,
     behavior: 'smooth'
   })
 }
