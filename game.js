@@ -226,21 +226,24 @@ start_game.onclick = function () {
       if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
       }
-//регистрируем нажатие пробела
-      document.addEventListener("keydown", function(e) {
-        if ([32].indexOf(e.keyCode) > -1) {
-          if (start == 0) {
-            play_image.classList.toggle('button_image_hidden');
-            button_image_hidden.classList.toggle('button_image_hidden');
-            start = 1;
-            requestAnimationFrame(loop);
-          }
-          else {
-            play_image.classList.toggle('button_image_hidden');
-            button_image_hidden.classList.toggle('button_image_hidden');
-            start = 0;
-          }
     }, false);
+//регистрируем нажатие пробела
+    document.addEventListener("keydown", function(e) {
+      if ([32].indexOf(e.keyCode) > -1) {
+        if (start == 0) {
+          play_image.classList.toggle('button_image_hidden');
+          button_image_hidden.classList.toggle('button_image_hidden');
+          start = 1;
+          requestAnimationFrame(loop);
+        }
+        else {
+          play_image.classList.toggle('button_image_hidden');
+          button_image_hidden.classList.toggle('button_image_hidden');
+          start = 0;
+        }
+      }
+    }, false);
+  }
   else {
     play_image.classList.toggle('button_image_hidden');
     button_image_hidden.classList.toggle('button_image_hidden');
