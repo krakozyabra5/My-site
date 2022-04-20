@@ -214,12 +214,6 @@ document.addEventListener('keydown', function (e) {
 });
 //запрашиваем выполнение функции
 requestAnimationFrame(loop);
-//отключаем прокрутку страницы стрелками
-document.addEventListener("keydown", function(e) {
-  if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-    e.preventDefault();
-  }
-}, false);
 //остановка и начало игры при нажатии на кнопку
 start_game.onclick = function () {
   if (start == 0) {
@@ -227,11 +221,35 @@ start_game.onclick = function () {
     button_image_hidden.classList.toggle('button_image_hidden');
     start = 1;
     requestAnimationFrame(loop);
-  }
+//отключаем прокрутку страницы клавишами
+    document.addEventListener("keydown", function(e) {
+      if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+      }
+//регистрируем нажатие пробела
+      document.addEventListener("keydown", function(e) {
+        if ([32].indexOf(e.keyCode) > -1) {
+          if (start == 0) {
+            play_image.classList.toggle('button_image_hidden');
+            button_image_hidden.classList.toggle('button_image_hidden');
+            start = 1;
+            requestAnimationFrame(loop);
+          }
+          else {
+            play_image.classList.toggle('button_image_hidden');
+            button_image_hidden.classList.toggle('button_image_hidden');
+            start = 0;
+          }
+    }, false);
   else {
     play_image.classList.toggle('button_image_hidden');
     button_image_hidden.classList.toggle('button_image_hidden');
     start = 0;
+//подключаем прокрутку страницы клавишами
+    document.addEventListener("keydown", function(e) {
+      if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+      }
+    }, false);
   }
 }
 
