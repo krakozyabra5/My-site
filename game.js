@@ -3,6 +3,7 @@ let canvas = document.querySelector('.game');
 let context = canvas.getContext('2d');
 let start_game = document.querySelector('.play_button');
 let play_image = document.querySelector('.play_image');
+let button_image_hidden = document.querySelector('.button_image_hidden');
 let start = 0;
 let score = 0;
 let max_score = 0;
@@ -222,12 +223,14 @@ document.addEventListener("keydown", function(e) {
 //остановка и начало игры при нажатии на кнопку
 start_game.onclick = function () {
   if (start == 0) {
-    play_image.classList.toggle('button_image_hidden')
+    play_image.classList.toggle('button_image_hidden');
+    button_image_hidden.classList.toggle('button_image_hidden');
     start = 1;
     requestAnimationFrame(loop);
   }
   else {
-    play_image.classList.toggle('button_image_hidden')
+    play_image.classList.toggle('button_image_hidden');
+    button_image_hidden.classList.toggle('button_image_hidden');
     start = 0;
   }
 }
