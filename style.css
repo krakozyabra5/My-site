@@ -196,7 +196,7 @@ background-size: 20px;
   height: 45px;
 }
 
-mail_link {
+.mail_link {
   position: relative;
   color: #949494;
   top: 11px;
