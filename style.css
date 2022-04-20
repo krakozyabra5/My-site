@@ -521,6 +521,10 @@ canvas {
     margin: 0px auto;
   }
 
+  .center img {
+    width: 275px;
+  }  
+  
   .right {
     display: none;
   }
@@ -576,9 +580,9 @@ canvas {
   }
 
   .search-block {
-    margin-top: 2px;
+    margin-top: 4px;
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: -7px;
     width: 160px;
   }
 
