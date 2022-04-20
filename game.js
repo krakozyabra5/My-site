@@ -240,6 +240,11 @@ start_game.onclick = function () {
           play_image.classList.toggle('button_image_hidden');
           button_image_hidden.classList.toggle('button_image_hidden');
           start = 0;
+//подключаем прокрутку страницы клавишами
+          document.addEventListener("keydown", function(e) {
+            if([37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            }
+          }, false);
         }
       }
     }, false);
