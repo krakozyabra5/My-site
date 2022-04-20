@@ -380,7 +380,7 @@ h1 {
 .play_button {
   position: relative;
   left: 285px;
-  bottom: 32px;
+  bottom: 28px;
   width: 27px;
   height: 27px;
   background-color: rgb(0,0,0,0);
@@ -389,6 +389,15 @@ h1 {
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.play_image {
+  position: relative;
+  right: 8px;
+}
+
+.button_image_hidden {
+  display: none;
 }
 
 .game_field {
