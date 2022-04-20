@@ -309,11 +309,6 @@ h1 {
   padding-bottom: 4px;
 }
 
-.my_hobbies:last-child {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
 .hobbies_name {
   background-color: #171819;
   padding-left: 15px;
