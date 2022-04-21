@@ -182,7 +182,7 @@ background-size: 20px;
 }
 
 .menu_rotate.active {
-  transform: rotate(90deg);
+  transform: rotate(90deg) scaleY(1.09);
 }
 
 .footer {
@@ -537,6 +537,7 @@ canvas {
   
   .nav {
     border: none;
+    justify-content: left;
   }
   
   .menuBurger {
@@ -546,7 +547,15 @@ canvas {
   .menu_bar li {
     outline: 0.6px solid #808080;
   }
-
+  
+  .menu_bar li:first-child {
+    border: none;
+  }
+  
+  .menu_bar li:last-child {
+    border: none;
+  }
+  
   .menu_bar a {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -564,15 +573,20 @@ canvas {
     border-left: 0.5px solid #808080;
     border-width: 3px;
     border-radius: 0px 0px 3px 3px;
-    margin-left: 12px;
+    margin-left: 10px;
     margin-top: 0px;
     background: #D3D3D3;
     width: 279px;
     white-space: nowrap;
     overflow: auto;
     max-height: 180px;
+    top: 45.2px;
   }
 
+  .menu_button {
+    margin-top: 5px;
+  }
+  
   .menu_image {
     margin-right: 0px;
     top: -9px;
