@@ -592,7 +592,7 @@ canvas {
   .menu_image {
     margin-right: 0px;
     top: 13px;
-    left: 28px;
+    left: 32px;
     transform: scale(0.75);
   }
 
@@ -601,7 +601,7 @@ canvas {
     margin-left: 0px;
     margin-right: 0px;
     width: 160px;
-    right: 20px;
+    right: 10px;
   }
 
   .search {
