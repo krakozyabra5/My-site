@@ -608,6 +608,11 @@ canvas {
     width: 100px;
     outline:none;
   }
+  
+  .center h3 {
+    width: 300px;
+    text-align: center;
+  }
 }
 
 
