@@ -550,10 +550,12 @@ canvas {
   
   .menu_bar li:first-child {
     border: none;
+    border-radius: 0px 0px 0px 0px;
   }
   
   .menu_bar li:last-child {
     border: none;
+    border-radius: 0px 0px 0px 0px;
   }
   
   .menu_bar a {
